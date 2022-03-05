@@ -1,0 +1,849 @@
+<html lang="en-US" class=" js_active  vc_desktop  vc_transform  vc_transform "><head><meta charset="UTF-8"><!-- Optimized with WP Meteor v2.3.9 - https://wordpress.org/plugins/wp-meteor/ --><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/3ce4f9b8/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api"></script><script>var _wpmeteor={"rdelay":2000,"elementor-animations":true,"elementor-pp":true,"v":"2.3.9"};if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]wpmeteordisable/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?wpmeteordisable=1"}else{document.location.href=href.replace("#","?wpmeteordisable=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&wpmeteordisable=1"}else{document.location.href=href.replace("#","&wpmeteordisable=1#")}}}};</script><script>!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="/",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";n.r(e);var r=new(function(){function t(){this.l=[]}var e=t.prototype;return e.emit=function(t,e){void 0===e&&(e=null),this.l[t]&&this.l[t].forEach((function(t){return t(e)}))},e.on=function(t,e){var n;(n=this.l)[t]||(n[t]=[]),this.l[t].push(e)},e.off=function(t,e){this.l[t]=(this.l[t]||[]).filter((function(t){return t!==e}))},t}()),o=new Date,i=document,a=function(){function t(){this.known=[]}var e=t.prototype;return e.init=function(){var t,e=this,n=!1,o=function(t){if(!n&&t&&t.fn&&!t.__wpmeteor){var r=function(e){return i.addEventListener("DOMContentLoaded",(function(n){e.bind(i)(t,n)})),this};e.known.push([t,t.fn.ready,t.fn.init.prototype.ready]),t.fn.ready=r,t.fn.init.prototype.ready=r,t.__wpmeteor=!0}return t};window.jQuery&&(t=o(window.jQuery)),Object.defineProperty(window,"jQuery",{get:function(){return t},set:function(e){return t=o(e)}}),r.on("l",(function(){return n=!0}))},e.unmock=function(){this.known.forEach((function(t){var e=t[0],n=t[1],r=t[2];e.fn.ready=n,e.fn.init.prototype.ready=r}))},t}(),c={};!function(t,e){try{var n=Object.defineProperty({},e,{get:function(){c[e]=!0}});t.addEventListener(e,null,n),t.removeEventListener(e,null,n)}catch(t){}}(window,"passive");var u=c,f=window,d=document,s=["mouseover","keydown","touchmove","touchend","wheel"],l=["mouseover","mouseout","touchstart","touchmove","touchend","click"],p="data-wpmeteor-",v=function(){function t(){}return t.prototype.init=function(t){var e=!1,n=!1,o=function t(o){e||(e=!0,s.forEach((function(e){return d.body.removeEventListener(e,t,u)})),clearTimeout(n),location.href.match(/wpmeteornopreload/)||r.emit("pre"),r.emit("fi"))},i=function(t){var e=new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0});return Object.defineProperty(e,"target",{writable:!1,value:t.target}),e};t<1e4&&r.on("i",(function(){e||(n=setTimeout(o,t))}));var a=[],c=function(t){t.target&&"dispatchEvent"in t.target&&("click"===t.type?(t.preventDefault(),t.stopPropagation(),a.push(i(t))):"touchmove"!==t.type&&a.push(t),t.target.setAttribute(p+t.type,!0))};r.on("l",(function(){var t;for(l.forEach((function(t){return f.removeEventListener(t,c)}));t=a.shift();){var e=t.target;e.getAttribute(p+"touchstart")&&e.getAttribute(p+"touchend")&&!e.getAttribute(p+"click")?(e.getAttribute(p+"touchmove")||(e.removeAttribute(p+"touchmove"),a.push(i(t))),e.removeAttribute(p+"touchstart"),e.removeAttribute(p+"touchend")):e.removeAttribute(p+t.type),e.dispatchEvent(t)}}));d.addEventListener("DOMContentLoaded",(function t(){s.forEach((function(t){return d.body.addEventListener(t,o,u)})),l.forEach((function(t){return f.addEventListener(t,c)})),d.removeEventListener("DOMContentLoaded",t)}))},t}(),m=document,h=m.createElement("span");h.setAttribute("id","elementor-device-mode"),h.setAttribute("class","elementor-screen-only");var y=window,b=document,g=b.documentElement,w=function(t){return t.getAttribute("class")||""},E=function(t,e){return t.setAttribute("class",e)},L=function(){window.addEventListener("load",(function(){var t=(m.body.appendChild(h),getComputedStyle(h,":after").content.replace(/"/g,"")),e=Math.max(g.clientWidth||0,y.innerWidth||0),n=Math.max(g.clientHeight||0,y.innerHeight||0),o=["_animation_"+t,"animation_"+t,"_animation","_animation","animation"];Array.from(b.querySelectorAll(".elementor-invisible")).forEach((function(t){var i=t.getBoundingClientRect();if(i.top+y.scrollY<=n&&i.left+y.scrollX<e)try{var a=JSON.parse(t.getAttribute("data-settings"));if(a.trigger_source)return;for(var c,u=a._animation_delay||a.animation_delay||0,f=0;f<o.length;f++)if(a[o[f]]){o[f],c=a[o[f]];break}if(c){var d=w(t),s="none"===c?d:d+" animated "+c,l=setTimeout((function(){E(t,s.replace(/\belementor\-invisible\b/,"")),o.forEach((function(t){return delete a[t]})),t.setAttribute("data-settings",JSON.stringify(a))}),u);r.on("fi",(function(){clearTimeout(l),E(t,w(t).replace(new RegExp("\b"+c+"\b"),""))}))}}catch(t){console.error(t)}}))}))},S=document,A="querySelectorAll",O="data-in-mega_smartmenus",_="DOMContentLoaded",j="readystatechange",P="message",k=console.error;!function(t,e,n,i,c,u,f,d,s){var l,p,m=t.constructor.name+"::",h=e.constructor.name+"::",y=function(e,n){n=n||t;for(var r=0;r<this.length;r++)e.call(n,this[r],r,this)};"NodeList"in t&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=y),"HTMLCollection"in t&&!HTMLCollection.prototype.forEach&&(HTMLCollection.prototype.forEach=y),_wpmeteor["elementor-animations"]&&L(),_wpmeteor["elementor-pp"]&&function(){var t=S.createElement("div");t.innerHTML='<span class="sub-arrow --wp-meteor"><i class="fa" aria-hidden="true"></i></span>';var e=t.firstChild;S.addEventListener("DOMContentLoaded",(function(){Array.from(S[A](".pp-advanced-menu ul")).forEach((function(t){if(!t.getAttribute(O)){(t.getAttribute("class")||"").match(/\bmega\-menu\b/)&&t[A]("ul").forEach((function(t){t.setAttribute(O,!0)}));var n=function(t){for(var e=[];t=t.previousElementSibling;)e.push(t);return e}(t),r=n.filter((function(t){return t})).filter((function(t){return"A"===t.tagName})).pop();if(r||(r=n.map((function(t){return Array.from(t[A]("a"))})).filter((function(t){return t})).flat().pop()),r){var o=e.cloneNode(!0);r.appendChild(o),new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){if(1===t.nodeType&&"SPAN"===t.tagName)try{r.removeChild(o)}catch(t){}}))}))})).observe(r,{childList:!0})}}}))}))}();var b,g,w=[],E=[],x={},C=!1,T=!1,M=setTimeout;var N=e[n].bind(e),R=e[i].bind(e),H=t[n].bind(t),D=t[i].bind(t);"undefined"!=typeof EventTarget&&(b=EventTarget.prototype.addEventListener,g=EventTarget.prototype.removeEventListener,N=b.bind(e),R=g.bind(e),H=b.bind(t),D=g.bind(t));var z,q=e.createElement.bind(e),B=e.__proto__.__lookupGetter__("readyState").bind(e);Object.defineProperty(e,"readyState",{get:function(){return z||B()},set:function(t){return z=t}});var Q=function(t){return E.filter((function(e,n){var r=e[0],o=(e[1],e[2]);if(!(t.indexOf(r.type)<0)){o||(o=r.target);try{for(var i=o.constructor.name+"::"+r.type,a=0;a<x[i].length;a++){if(x[i][a])if(!W[i+"::"+n+"::"+a])return!0}}catch(t){}}})).length},W={},I=function(t){E.forEach((function(n,r){var o=n[0],i=n[1],a=n[2];if(!(t.indexOf(o.type)<0)){a||(a=o.target);try{var c=a.constructor.name+"::"+o.type;if((x[c]||[]).length)for(var u=0;u<x[c].length;u++){var f=x[c][u];if(f){var d=c+"::"+r+"::"+u;if(!W[d]){W[d]=!0,e.readyState=i;try{f.hasOwnProperty("prototype")&&f.prototype.constructor!==f?f(o):f.bind(a)(o)}catch(t){k(t,f)}}}}}catch(t){k(t)}}}))};N(_,(function(t){E.push([t,e.readyState,e])})),N(j,(function(t){E.push([t,e.readyState,e])})),H(_,(function(n){E.push([n,e.readyState,t])})),H(d,(function(n){E.push([n,e.readyState,t]),G||I([_,j,P,d])}));var J=function(n){E.push([n,e.readyState,t])};H(P,J),r.on("fi",(function(){T=!0,G=!0,e.readyState="loading",M(X)}));H(d,(function t(){C=!0,T&&!G&&(e.readyState="loading",M(X)),D(d,t)})),(new v).init(_wpmeteor.rdelay);var F=new a;F.init();var G=!1,X=function n(){var o=w.shift();if(o)if(o[c]("data-src"))o.hasAttribute("data-async")?(U(o),M(n)):U(o,n);else if("javascript/blocked"==o.type)U(o),M(n);else if(o.hasAttribute("data-wpmeteor-onload")){var i=o[c]("data-wpmeteor-onload");try{new Function(i).call(o)}catch(t){k(t)}M(n)}else M(n);else if(Q([_,j,P]))I([_,j,P]),M(n);else if(T&&C)if(Q([d,P]))I([d,P]),M(n);else{if(t.RocketLazyLoadScripts)try{RocketLazyLoadScripts.run()}catch(t){k(t)}e.readyState="complete",D(P,J),(x[m+"message"]||[]).forEach((function(t){H(P,t)})),F.unmock(),Z=N,$=R,nt=H,rt=D,G=!1,setTimeout((function(){return r.emit("l")}))}else G=!1},Y=function(t){for(var n=e.createElement("SCRIPT"),r=t.attributes,o=r.length-1;o>=0;o--)n.setAttribute(r[o].name,r[o].value);return n.bypass=!0,n.type=t.hasAttribute("data-wpmeteor-module")?"module":"text/javascript",(t.text||"").match(/^\s*class RocketLazyLoadScripts/)?n.text=t.text.replace(/^\s*class RocketLazyLoadScripts/,"window.RocketLazyLoadScripts=class").replace("RocketLazyLoadScripts.run();",""):n.text=t.text,n[f]("data-wpmeteor-after"),n},K=function(t,e){var n=t.parentNode;n&&n.replaceChild(e,t)},U=function(t,e){if(t[c]("data-src")){var r=Y(t),o=b?b.bind(r):r[n].bind(r);if(e){var i=function(){return M(e)};o(d,i),o(s,i)}r.src=t[c]("data-src"),r[f]("data-src"),K(t,r)}else"javascript/blocked"===t.type?K(t,Y(t)):onLoad&&onLoad()},V=function(t,e){var n=(x[t]||[]).indexOf(e);if(n>=0)return x[t][n]=void 0,!0},Z=function(t,e){if(e&&(t===_||t===j)){var n=h+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return N.apply(void 0,[t,e].concat(o))},$=function(t,e){t===_&&V(h+t,e);return R(t,e)};Object.defineProperties(e,((l={})[n]={get:function(){return Z},set:function(){return Z}},l[i]={get:function(){return $},set:function(){return $}},l)),r.on("pre",(function(){return w.forEach((function(t){var n=t[c]("data-src");if(n){var r=q("link");r.rel="pre"+d,r.as="script",r.href=n,r.crossorigin=!0,e.head.appendChild(r)}}))})),N(_,(function(){e.querySelectorAll("script[data-wpmeteor-after]").forEach((function(t){return w.push(t)}));var t=["link"].map((function(t){return t+"[data-wpmeteor-onload]"})).join(",");e.querySelectorAll(t).forEach((function(t){return w.push(t)}))}));var tt=function(t){if(e.currentScript)try{var n=e.currentScript.parentElement,r=e.currentScript.nextSibling,i=document.createElement("div");i.innerHTML=t,Array.from(i.childNodes).forEach((function(t){"SCRIPT"===t.nodeName?n.insertBefore(Y(t),r):n.insertBefore(t,r)}))}catch(t){console.error(t)}else k((new Date-o)/1e3,"document.currentScript not set",t)},et=function(t){return tt(t+"\n")};Object.defineProperties(e,{write:{get:function(){return tt},set:function(t){return tt=t}},writeln:{get:function(){return et},set:function(t){return et=t}}});var nt=function(t,e){if(e&&(t===d||t===_||t===P)){var n=t===_?h+t:m+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return H.apply(void 0,[t,e].concat(o))},rt=function(t,e){t===d&&V(t===_?h+t:m+t,e);return D(t,e)};Object.defineProperties(t,((p={})[n]={get:function(){return nt},set:function(){return nt}},p[i]={get:function(){return rt},set:function(){return rt}},p));var ot=function(t){var e;return{get:function(){return e},set:function(n){return e&&V(t,n),x[t]=x[t]||[],x[t].push(n),e=n}}},it=ot(m+d);Object.defineProperty(t,"onload",it),N(_,(function(){Object.defineProperty(e.body,"onload",it)})),Object.defineProperty(e,"onreadystatechange",ot(h+j)),Object.defineProperty(t,"onmessage",ot(m+P));var at=1,ct=function(){--at||r.emit("i")};H(d,(function t(){M((function(){e.querySelectorAll("img").forEach((function(t){if(!t.complete&&(t.currentSrc||t.src)&&"lazy"==!(t.loading||"").toLowerCase()||(r=t.getBoundingClientRect(),o=window.innerHeight||document.documentElement.clientHeight,i=window.innerWidth||document.documentElement.clientWidth,r.top>=-1*o*1&&r.left>=-1*i*1&&r.bottom<=2*o&&r.right<=2*i)){var e=new Image;e[n](d,ct),e[n](s,ct),e.src=t.currentSrc||t.src,at++}var r,o,i})),ct()})),D(d,t)}));var ut=Object.defineProperty;Object.defineProperty=function(n,r,o){return n===t&&["jQuery","onload"].indexOf(r)>=0||(n===e||n===e.body)&&["readyState","write"].indexOf(r)>=0?n:ut(n,r,o)},Object.defineProperties=function(t,e){for(var n in e)Object.defineProperty(t,n,e[n]);return t}}(window,document,"addEventListener","removeEventListener","getAttribute",0,"removeAttribute","load","error")}]);
+</script>
+	
+		<title>ASHIKUL'S SHOP</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Antik's Shop » Feed" href="https://shopantik.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Antik's Shop » Comments Feed" href="https://shopantik.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/shopantik.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://shopantik.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="wc-blocks-vendors-style-css" href="https://shopantik.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=5.5.1" type="text/css" media="all">
+<link rel="stylesheet" id="wc-blocks-style-css" href="https://shopantik.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=5.5.1" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://shopantik.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="https://shopantik.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.3.9" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="woof-css" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/css/front.css?ver=2.2.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="chosen-drop-down-css" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.min.css?ver=2.2.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-layout-css" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.6.0" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.6.0" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.6.0" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="awts-style-css" href="https://shopantik.com/wp-content/plugins/woo-total-sales/assets/css/awts-style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="urna-theme-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.11.0" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.2.4" type="text/css" media="all">
+<style id="elementor-frontend-inline-css" type="text/css">
+@font-face{font-family:eicons;src:url(https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://shopantik.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel="stylesheet" id="elementor-post-9-css" href="https://shopantik.com/wp-content/uploads/elementor/css/post-9.css?ver=1622557227" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="https://shopantik.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.0.10" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-11-css" href="https://shopantik.com/wp-content/uploads/elementor/css/post-11.css?ver=1631586277" type="text/css" media="all">
+<link rel="stylesheet" id="woo-variation-swatches-css" href="https://shopantik.com/wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css?ver=1.1.19" type="text/css" media="all">
+<style id="woo-variation-swatches-inline-css" type="text/css">
+.variable-item:not(.radio-variable-item) { width : 30px; height : 30px; } .wvs-style-squared .button-variable-item { min-width : 30px; } .button-variable-item span { font-size : 16px; }
+</style>
+<link rel="stylesheet" id="woo-variation-swatches-theme-override-css" href="https://shopantik.com/wp-content/plugins/woo-variation-swatches/assets/css/wvs-theme-override.min.css?ver=1.1.19" type="text/css" media="all">
+<link rel="stylesheet" id="woo-variation-swatches-tooltip-css" href="https://shopantik.com/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.19" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://shopantik.com/wp-content/themes/urna/css/bootstrap.css?ver=3.3.7" type="text/css" media="all">
+<link rel="stylesheet" id="urna-template-css" href="https://shopantik.com/wp-content/themes/urna/css/template.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="urna-skin-css" href="https://shopantik.com/wp-content/themes/urna/css/skins/furniture/type.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="urna-style-css" href="https://shopantik.com/wp-content/themes/urna/style.css?ver=1.0" type="text/css" media="all">
+<style id="urna-style-inline-css" type="text/css">
+/* Theme Options Styles *//* Custom Color (skin) *//* check main color *//*color*//*background*/.btn-theme-2:hover,.woocommerce-pagination a.button:hover,.widget_price_filter .price_slider_amount .button:hover,.tbay-addon.tbay-addon-banner .tbay-addon-content .button:hover,.tbay-addon-newsletter input[type="submit"]:hover,.tbay-addon-newsletter button[type="submit"]:hover,.widget-newletter input[type="submit"]:hover,.widget-newletter button[type="submit"]:hover,.post-list .readmore:hover,.post-grid .readmore:hover,.entry-single .entry-description a:hover,.entry-single .author-info .all-post:hover,.post-password-form input[type=submit]:hover,#comments #respond .form-submit input:hover,#reviews #respond .form-submit input:hover,.wpcf7-form .form-horizontal .wpcf7-submit:hover,.page-404 .page-content .backtohome:hover,.woocommerce .yith-wfbt-submit-block .yith-wfbt-submit-button-remove:hover,body table.compare-list .add-to-cart td a.button:hover,body table.compare-list .add-to-cart td a.button + a:hover,input#ywqa-submit-question:hover,div#new-answer-header .ywqa_submit_answer:hover,.woocommerce table.wishlist_table.shop_table .product-add-to-cart .add-cart a:hover,.wishlist_table.mobile .product-add-to-cart .add-cart a:hover,.products-list .product-block .group-buttons > div.add-cart a:hover,.top-cart .tbay-dropdown-cart ul.cart_empty a.wc-continue:hover,.top-cart .cart_list.woocommerce-mini-cart + .woocommerce-mini-cart__total + .woocommerce-mini-cart__buttons a.checkout:hover,.top-cart .group-button p.buttons a.button.checkout:hover,.woocommerce button.button[name="track"]:hover,.singular-shop div.product .single_add_to_cart_button:hover,#sticky-menu-bar #sticky-custom-add-to-cart:hover,.mobile-btn-cart-click #tbay-click-addtocart:hover,.cart_totals .wc-proceed-to-checkout a.checkout-button:hover,.coupon .box input[type=submit]:hover,.woocommerce form.login > p.last .button:hover,.woocommerce form.register > p.last .button:hover,.woocommerce-order-received .order-again a:hover,.woocommerce form.checkout_coupon > p.form-row-last .button:hover,.woocommerce-checkout-payment .place-order button.button.alt:hover,#custom-register input.submit_button:hover,#custom-login input.submit_button:hover,input[type="submit"].dokan-btn:hover,.dokan-btn-theme:hover,.dokan-btn-success:hover,.dokan-dashboard .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit]:hover,#dokan-seller-listing-wrap .store-footer > a:hover,.dokan-orders-content #dokan-order-status-form a.dokan-cancel-status:hover,.wcmp_regi_main .register .button:hover,#report_abuse_form button.submit-report-abuse:hover,.vendor_sidebar .widget_wcmp_quick_info #respond input#submit:hover,#wcmp-store-conatiner .wcmp-store-locator-wrap .wcmp-store-map-pagination .vendor_sort input[type="submit"]:hover,#wcmp-store-conatiner .wcmp-store-map-filter input[type="submit"]:hover,#wcfm-main-contentainer .wcfm-membership-wrapper input[type="submit"]:hover,#wcfm-main-contentainer .wcfm_form_simple_submit_wrapper .wcfm_submit_button:hover,.wcfm_popup_wrapper .wcfm_popup_button:hover,#wcfmmp-store #reviews .add_review button:hover,.form-row input[name="apply_for_vendor_submit"]:hover,form.wcv-form .wcv-button[type="submit"]:hover,.dashboard .wcv-dashboard-navigation ~ form input[type="submit"]:hover,.shop_settings input[name="vendor_application_submit"]:hover,form[name="export_orders"] input:hover,.wcvendors-pro-dashboard-wrapper input#update_button:hover,.wcvendors-pro-dashboard-wrapper .wcv-search-form .wcv-button:hover,.wcv-form .control-group .control > input.wcv-button:hover:not(#clear_button),table.wcvendors-table-order .wcv-shade.wcv-fade .order_note_form input[type="submit"]:hover,table.wcvendors-table-order form #tracking_number_save_button:hover,form#wcv-store-settings input#store_save_button:hover,.wcv_store_search form input[type="submit"]:hover,.wcv_vendor_search form input[type="submit"]:hover,.wpmc-steps-wrapper ~ .wpmc-nav-wrapper button[type="button"]:hover,.btn-theme-2:focus,.woocommerce-pagination a.button:focus,.widget_price_filter .price_slider_amount .button:focus,.tbay-addon.tbay-addon-banner .tbay-addon-content .button:focus,.tbay-addon-newsletter input[type="submit"]:focus,.tbay-addon-newsletter button[type="submit"]:focus,.widget-newletter input[type="submit"]:focus,.widget-newletter button[type="submit"]:focus,.post-list .readmore:focus,.post-grid .readmore:focus,.entry-single .entry-description a:focus,.entry-single .author-info .all-post:focus,.post-password-form input[type=submit]:focus,#comments #respond .form-submit input:focus,#reviews #respond .form-submit input:focus,.wpcf7-form .form-horizontal .wpcf7-submit:focus,.page-404 .page-content .backtohome:focus,.woocommerce .yith-wfbt-submit-block .yith-wfbt-submit-button-remove:focus,body table.compare-list .add-to-cart td a.button:focus,body table.compare-list .add-to-cart td a.button + a:focus,input#ywqa-submit-question:focus,div#new-answer-header .ywqa_submit_answer:focus,.woocommerce table.wishlist_table.shop_table .product-add-to-cart .add-cart a:focus,.wishlist_table.mobile .product-add-to-cart .add-cart a:focus,.products-list .product-block .group-buttons > div.add-cart a:focus,.top-cart .tbay-dropdown-cart ul.cart_empty a.wc-continue:focus,.top-cart .cart_list.woocommerce-mini-cart + .woocommerce-mini-cart__total + .woocommerce-mini-cart__buttons a.checkout:focus,.top-cart .group-button p.buttons a.button.checkout:focus,.woocommerce button.button[name="track"]:focus,.singular-shop div.product .single_add_to_cart_button:focus,#sticky-menu-bar #sticky-custom-add-to-cart:focus,.mobile-btn-cart-click #tbay-click-addtocart:focus,.cart_totals .wc-proceed-to-checkout a.checkout-button:focus,.coupon .box input[type=submit]:focus,.woocommerce form.login > p.last .button:focus,.woocommerce form.register > p.last .button:focus,.woocommerce-order-received .order-again a:focus,.woocommerce form.checkout_coupon > p.form-row-last .button:focus,.woocommerce-checkout-payment .place-order button.button.alt:focus,#custom-register input.submit_button:focus,#custom-login input.submit_button:focus,input[type="submit"].dokan-btn:focus,.dokan-btn-theme:focus,.dokan-btn-success:focus,.dokan-dashboard .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit]:focus,#dokan-seller-listing-wrap .store-footer > a:focus,.dokan-orders-content #dokan-order-status-form a.dokan-cancel-status:focus,.wcmp_regi_main .register .button:focus,#report_abuse_form button.submit-report-abuse:focus,.vendor_sidebar .widget_wcmp_quick_info #respond input#submit:focus,#wcmp-store-conatiner .wcmp-store-locator-wrap .wcmp-store-map-pagination .vendor_sort input[type="submit"]:focus,#wcmp-store-conatiner .wcmp-store-map-filter input[type="submit"]:focus,#wcfm-main-contentainer .wcfm-membership-wrapper input[type="submit"]:focus,#wcfm-main-contentainer .wcfm_form_simple_submit_wrapper .wcfm_submit_button:focus,.wcfm_popup_wrapper .wcfm_popup_button:focus,#wcfmmp-store #reviews .add_review button:focus,.form-row input[name="apply_for_vendor_submit"]:focus,form.wcv-form .wcv-button[type="submit"]:focus,.dashboard .wcv-dashboard-navigation ~ form input[type="submit"]:focus,.shop_settings input[name="vendor_application_submit"]:focus,form[name="export_orders"] input:focus,.wcvendors-pro-dashboard-wrapper input#update_button:focus,.wcvendors-pro-dashboard-wrapper .wcv-search-form .wcv-button:focus,.wcv-form .control-group .control > input.wcv-button:focus:not(#clear_button),table.wcvendors-table-order .wcv-shade.wcv-fade .order_note_form input[type="submit"]:focus,table.wcvendors-table-order form #tracking_number_save_button:focus,form#wcv-store-settings input#store_save_button:focus,.wcv_store_search form input[type="submit"]:focus,.wcv_vendor_search form input[type="submit"]:focus,.wpmc-steps-wrapper ~ .wpmc-nav-wrapper button[type="button"]:focus,.btn-theme-2:active:hover,.woocommerce-pagination a.button:active:hover,.widget_price_filter .price_slider_amount .button:active:hover,.tbay-addon.tbay-addon-banner .tbay-addon-content .button:active:hover,.tbay-addon-newsletter input[type="submit"]:active:hover,.tbay-addon-newsletter button[type="submit"]:active:hover,.widget-newletter input[type="submit"]:active:hover,.widget-newletter button[type="submit"]:active:hover,.post-list .readmore:active:hover,.post-grid .readmore:active:hover,.entry-single .entry-description a:active:hover,.entry-single .author-info .all-post:active:hover,.post-password-form input[type=submit]:active:hover,#comments #respond .form-submit input:active:hover,#reviews #respond .form-submit input:active:hover,.wpcf7-form .form-horizontal .wpcf7-submit:active:hover,.page-404 .page-content .backtohome:active:hover,.woocommerce .yith-wfbt-submit-block .yith-wfbt-submit-button-remove:active:hover,body table.compare-list .add-to-cart td a.button:active:hover,body table.compare-list .add-to-cart td a.button + a:active:hover,input#ywqa-submit-question:active:hover,div#new-answer-header .ywqa_submit_answer:active:hover,.woocommerce table.wishlist_table.shop_table .product-add-to-cart .add-cart a:active:hover,.wishlist_table.mobile .product-add-to-cart .add-cart a:active:hover,.products-list .product-block .group-buttons > div.add-cart a:active:hover,.top-cart .tbay-dropdown-cart ul.cart_empty a.wc-continue:active:hover,.top-cart .cart_list.woocommerce-mini-cart + .woocommerce-mini-cart__total + .woocommerce-mini-cart__buttons a.checkout:active:hover,.top-cart .group-button p.buttons a.button.checkout:active:hover,.woocommerce button.button[name="track"]:active:hover,.singular-shop div.product .single_add_to_cart_button:active:hover,#sticky-menu-bar #sticky-custom-add-to-cart:active:hover,.mobile-btn-cart-click #tbay-click-addtocart:active:hover,.cart_totals .wc-proceed-to-checkout a.checkout-button:active:hover,.coupon .box input[type=submit]:active:hover,.woocommerce form.login > p.last .button:active:hover,.woocommerce form.register > p.last .button:active:hover,.woocommerce-order-received .order-again a:active:hover,.woocommerce form.checkout_coupon > p.form-row-last .button:active:hover,.woocommerce-checkout-payment .place-order button.button.alt:active:hover,#custom-register input.submit_button:active:hover,#custom-login input.submit_button:active:hover,input[type="submit"].dokan-btn:active:hover,.dokan-btn-theme:active:hover,.dokan-btn-success:active:hover,.dokan-dashboard .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit]:active:hover,#dokan-seller-listing-wrap .store-footer > a:active:hover,.dokan-orders-content #dokan-order-status-form a.dokan-cancel-status:active:hover,.wcmp_regi_main .register .button:active:hover,#report_abuse_form button.submit-report-abuse:active:hover,.vendor_sidebar .widget_wcmp_quick_info #respond input#submit:active:hover,#wcmp-store-conatiner .wcmp-store-locator-wrap .wcmp-store-map-pagination .vendor_sort input[type="submit"]:active:hover,#wcmp-store-conatiner .wcmp-store-map-filter input[type="submit"]:active:hover,#wcfm-main-contentainer .wcfm-membership-wrapper input[type="submit"]:active:hover,#wcfm-main-contentainer .wcfm_form_simple_submit_wrapper .wcfm_submit_button:active:hover,.wcfm_popup_wrapper .wcfm_popup_button:active:hover,#wcfmmp-store #reviews .add_review button:active:hover,.form-row input[name="apply_for_vendor_submit"]:active:hover,form.wcv-form .wcv-button[type="submit"]:active:hover,.dashboard .wcv-dashboard-navigation ~ form input[type="submit"]:active:hover,.shop_settings input[name="vendor_application_submit"]:active:hover,form[name="export_orders"] input:active:hover,.wcvendors-pro-dashboard-wrapper input#update_button:active:hover,.wcvendors-pro-dashboard-wrapper .wcv-search-form .wcv-button:active:hover,.wcv-form .control-group .control > input.wcv-button:active:hover:not(#clear_button),table.wcvendors-table-order .wcv-shade.wcv-fade .order_note_form input[type="submit"]:active:hover,table.wcvendors-table-order form #tracking_number_save_button:active:hover,form#wcv-store-settings input#store_save_button:active:hover,.wcv_store_search form input[type="submit"]:active:hover,.wcv_vendor_search form input[type="submit"]:active:hover,.wpmc-steps-wrapper ~ .wpmc-nav-wrapper button[type="button"]:active:hover,.product-block.v15.product-quantity-mode .group-add-cart .add-cart:hover , .mobile-btn-cart-click #tbay-click-addtocart:hover {background: #b50712;border-color: #b50712;}/**Fix theme color important**/.product-block .wcfmmp_sold_by_wrapper a:hover,.product-block .wcfmmp_sold_by_wrapper a:focus {color: #ca0815 !important;}.site-header .logo img {max-width: 173px;}.site-header .logo img {}/*Tablet*/@media (max-width: 1199px)  and (min-width: 768px) {/*color*/.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt.selected,#custom-login-wrapper .modal-content .modal-body .nav-tabs li.active a,.active-search-mobile .tbay-search-mobile .count,#tbay-mobile-menu-navbar.search-mobile-focus .tbay-search-mobile .count,.image-mains .show-mobile > div .yith-wcwl-wishlistexistsbrowse.show i {color: #ca0815;}/*background*/.tbay-search-mobile .form-group .input-group .button-group .button-search.icon {background-color: #ca0815;}/*Border*/.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt.selected,.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt:last-child.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt:last-child.selected {border-color: #ca0815;}}/*Mobile*/@media (max-width: 767px) {/*color*/.footer-device-mobile > * a:hover,.footer-device-mobile > *.active a,.footer-device-mobile > *.active a i , body.woocommerce-wishlist .footer-device-mobile > .device-wishlist a,body.woocommerce-wishlist .footer-device-mobile > .device-wishlist a i,.products-list .product-block .group-buttons > div + div.button-wishlist .yith-wcwl-add-to-wishlist.exists a,.product-block .button-wishlist.shown-mobile > div .yith-wcwl-wishlistaddedbrowse a,.product-block .button-wishlist.shown-mobile > div .yith-wcwl-wishlistexistsbrowse a,.woocommerce table.shop_table.my_account_orders > tbody > tr > td .woocommerce-Price-amount,.woocommerce table.shop_table.dokan-rma-order-item-table > tbody > tr > td .woocommerce-Price-amount,.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt.selected,#custom-login-wrapper .modal-content .modal-body .nav-tabs li.active a,.active-search-mobile .tbay-search-mobile .count,#tbay-mobile-menu-navbar.search-mobile-focus .tbay-search-mobile .count,.image-mains .show-mobile > div .yith-wcwl-wishlistexistsbrowse.show i {color: #ca0815;}/*background*/.topbar-device-mobile .top-cart a.wc-continue,.tbay-show-cart-mobile .product-block div.add-cart a,.tbay-addon-newsletter .input-group-btn input,.tbay-search-mobile .form-group .input-group .button-group .button-search.icon {background-color: #ca0815;}/*Border*/.topbar-device-mobile .top-cart a.wc-continue,.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt.selected,.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt:last-child.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt:last-child.selected {border-color: #ca0815;}}/*No edit code customize*/@media (max-width: 1199px)  and (min-width: 768px) {/*color*/.footer-device-mobile > * a:hover,.footer-device-mobile > *.active a,.footer-device-mobile > *.active a i , body.woocommerce-wishlist .footer-device-mobile > .device-wishlist a,body.woocommerce-wishlist .footer-device-mobile > .device-wishlist a i,.vc_tta-container .vc_tta-panel.vc_active .vc_tta-panel-title > a span,.cart_totals table .order-total .woocs_special_price_code {color: #ca0815;}/*background*/.topbar-device-mobile .top-cart a.wc-continue,.tbay-addon-newletter .input-group-btn input {background-color: #ca0815;}/*Border*/.topbar-device-mobile .top-cart a.wc-continue {border-color: #ca0815;}}@media (max-width: 1199px) {/* Limit logo image height for mobile according to mobile header height */.mobile-logo a img {max-width: 69px;}.mobile-logo a img {}}.woocommerce .product span.onsale > span,.image-mains span.onsale .saled,.image-mains span.onsale .featured {border-top-left-radius: 50%;-webkit-border-top-left-radius: 50%;-moz-border-top-left-radius: 50%;border-top-right-radius: 50%;-webkit-border-top-right-radius: 50%;-moz-border-top-right-radius: 50%;border-bottom-right-radius: 50%;-webkit-border-bottom-right-radius: 50%;-moz-border-bottom-right-radius: 50%;border-bottom-left-radius: 50%;-webkit-border-bottom-left-radius: 50%;-moz-border-bottom-left-radius: 50%;}#shop-now.has-buy-now .tbay-buy-now.button,#shop-now.has-buy-now .tbay-buy-now.button.disabled,.mobile-btn-cart-click #tbay-click-buy-now {background-color: #dd3333;border-color: #dd3333;}#shop-now.has-buy-now .tbay-buy-now.button:not(.disabled):hover,#shop-now.has-buy-now .tbay-buy-now.button:not(.disabled):focus,.mobile-btn-cart-click #tbay-click-buy-now:hover,.mobile-btn-cart-click #tbay-click-buy-now:focus {background: #c62d2d;border-color: #c62d2d;}}/* Custom CSS */a.woocommerce-MyAccount-downloads-file.button.alt {color: #ca0826 !important;font-size: 20px !important;}a.woocommerce-MyAccount-downloads-file.button.alt:hover {background-color: lightblue !important;padding: 10px;text-decoration: none !important;}.download-product > a {font-size: 19px;text-decoration: none !important;text-transform: uppercase !important;font-weight: 700 !important;}
+</style>
+<link rel="stylesheet" id="font-awesome-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+<style id="font-awesome-inline-css" type="text/css">
+[data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+</style>
+<link rel="stylesheet" id="font-tbay-css" href="https://shopantik.com/wp-content/themes/urna/css/font-tbay-custom.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="simple-line-icons-css" href="https://shopantik.com/wp-content/themes/urna/css/simple-line-icons.css?ver=2.4.0" type="text/css" media="all">
+<link rel="stylesheet" id="linearicons-css" href="https://shopantik.com/wp-content/themes/urna/css/linearicons.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-iconic-font-css" href="https://shopantik.com/wp-content/themes/urna/css/material-design-iconic-font.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css-css" href="https://shopantik.com/wp-content/themes/urna/css/animate.css?ver=3.5.0" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-treeview-css" href="https://shopantik.com/wp-content/themes/urna/css/jquery.treeview.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="https://shopantik.com/wp-content/themes/urna/css/magnific-popup.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="olympus-google-fonts-css" href="https://fonts.googleapis.com/css?family=Hind+Siliguri%3A300%2C400%2C500%2C600%2C700%2C300i%2C400i%2C500i%2C600i%2C700i&amp;display=swap&amp;subset=all&amp;ver=3.0.4" type="text/css" media="all">
+<link rel="stylesheet" id="urna-child-style-css" href="https://shopantik.com/wp-content/themes/urna-child/style.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CGlegoo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CGotu%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRambla%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.1" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.1" type="text/css" media="all">
+<link rel="stylesheet" id="wppb_stylesheet-css" href="https://shopantik.com/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=3.5.4" type="text/css" media="all">
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<script id="jquery-core-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"></script>
+<script id="jquery-migrate-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"></script>
+<script id="tp-tools-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.3.9"></script>
+<script id="revmin-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.3.9"></script>
+<script id="jquery-blockui-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.5.6.0"></script>
+<script id="wc-add-to-cart-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/shopantik.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script id="wc-add-to-cart-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.6.0"></script>
+<script id="vc_woocommerce-add-to-cart-js-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.5.0"></script>
+<script id="font-awesome-4-shim-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.2.4"></script>
+<link rel="https://api.w.org/" href="https://shopantik.com/wp-json/"><link rel="alternate" type="application/json" href="https://shopantik.com/wp-json/wp/v2/pages/11"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shopantik.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://shopantik.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<meta name="generator" content="WooCommerce 5.6.0">
+<link rel="canonical" href="https://shopantik.com/">
+<link rel="shortlink" href="https://shopantik.com/">
+<link rel="alternate" type="application/json+oembed" href="https://shopantik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopantik.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://shopantik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopantik.com%2F&amp;format=xml">
+<meta name="framework" content="Redux 4.2.14"><link href="https://shopantik.com/wp-content/plugins/bangla-web-fonts/solaiman-lipi/font.css" rel="stylesheet">		<style>
+			body, article, h1, h2, h3, h4, h5, h6, textarea, input, select, .topbar, .main-menu, .breadcrumb, .copyrights-area, form span.required {
+				font-family: 'SolaimanLipi', Arial, sans-serif !important;
+			}
+		</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<meta name="generator" content="Powered by Slider Revolution 6.3.9 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="https://shopantik.com/wp-content/uploads/2021/03/cropped-ANTIK-WRITINGV-BOOK-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://shopantik.com/wp-content/uploads/2021/03/cropped-ANTIK-WRITINGV-BOOK-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://shopantik.com/wp-content/uploads/2021/03/cropped-ANTIK-WRITINGV-BOOK-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://shopantik.com/wp-content/uploads/2021/03/cropped-ANTIK-WRITINGV-BOOK-1-270x270.png">
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+<style id="urna_tbay_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">.btn-link:hover,.btn-link:focus , .color,a:hover,a:focus,.pagination a:hover,.tbay-pagination a:hover,.woocommerce-pagination a:hover , .wpb_text_column a,.has-after:hover,.post .entry-category.type-2 a:hover,.entry-meta-list .entry-author a:hover,.entry-single .entry-category a:hover,.woocommerce form.login .lost_password a:hover,.woocommerce form.register .lost_password a:hover,.woocommerce form.register .wcfmmp_become_vendor_link a:hover,button.btn-close:hover,.widget_urna_popup_newsletter .popup-content > a:hover,.top-cart .offcanvas-close:hover,.new-input + span:before,.woof_container input[type=checkbox]:not(.woof_color_term) + span:before,form.checkout input[type=radio] + span:before,form.checkout input[type=checkbox] + span:before,.woocommerce-account input[type=radio] + span:before,.woocommerce-account input[type=checkbox] + span:before,.woocommerce form .form-row .woocommerce-form__input + span:before,#custom-login-wrapper #cus-rememberme + span:before,.new-input + label:before,.woof_container input[type=checkbox]:not(.woof_color_term) + label:before,form.checkout input[type=radio] + label:before,form.checkout input[type=checkbox] + label:before,.woocommerce-account input[type=radio] + label:before,.woocommerce-account input[type=checkbox] + label:before,.woocommerce form .form-row .woocommerce-form__input + label:before,#custom-login-wrapper #cus-rememberme + label:before,.autocomplete-suggestions > div.view-all-products:hover,#tbay-search-form-canvas .sidebar-canvas-search .sidebar-content .button-group .button-search i:hover,#tbay-search-form-canvas .sidebar-canvas-search .sidebar-content .select-category .optWrapper .options li:hover,#tbay-search-form-canvas .sidebar-canvas-search .sidebar-content .autocomplete-suggestions .autocomplete-suggestion .product-title:hover,#tbay-search-form-canvas .sidebar-content button:hover,#tbay-search-form-canvas.v2 button:hover,#tbay-search-form-canvas.v2 button:hover i,#tbay-search-form-canvas.v2 .sidebar-canvas-search .sidebar-content .select-category .optWrapper .options li:hover label , #tbay-search-form-canvas.v2 .autocomplete-suggestions > div .suggestion-group:hover .suggestion-title,#tbay-header .topbar-mobile .btn:hover,#tbay-header .topbar-mobile .btn:focus,#tbay-customize-header .topbar-mobile .btn:hover,#tbay-customize-header .topbar-mobile .btn:focus,.tbay-login .account-menu ul li a:hover,.tbay-custom-language li:hover .select-button,.tbay-custom-language li:hover .select-button:after,.tbay-custom-language .select-button:hover:after,.tbay-footer .menu li > a:hover,.tbay-footer ul.menu li.active a,.contact-info a:hover,.copyright a,.navbar-nav > li > ul.dropdown-menu li:hover > a,.navbar-nav > li > ul.dropdown-menu li:focus > a,.navbar-nav > li > ul.dropdown-menu li.active > a,.navbar-nav > li > .sub-menu li:hover > a,.navbar-nav > li > .sub-menu li:focus > a,.navbar-nav > li > .sub-menu li.active > a,.navbar-nav .dropdown-menu > li:hover > a,.navbar-nav .dropdown-menu > li.active > a,.navbar-nav .sub-menu > li:hover > a,.navbar-nav .sub-menu > li.active > a,.navbar-nav .dropdown-menu > li > a:hover,.navbar-nav .sub-menu > li > a:hover,.navbar-nav .dropdown-menu .tbay-addon ul:not(.entry-meta-list) li > a:hover,.navbar-nav .sub-menu .tbay-addon ul:not(.entry-meta-list) li > a:hover,.navbar-nav .dropdown-menu .tbay-addon ul:not(.entry-meta-list) li.active a,.navbar-nav .sub-menu .tbay-addon ul:not(.entry-meta-list) li.active a,.navbar-offcanvas .navbar-nav > li.open > a:hover,.navbar-offcanvas .navbar-nav > li.open > a:focus,.navbar-offcanvas .navbar-nav > li.open > a,.navbar-offcanvas .navbar-nav > li.active > a:hover,.navbar-offcanvas .navbar-nav > li.active > a:focus,.navbar-offcanvas .navbar-nav > li.active > a,.navbar-offcanvas .navbar-nav > li:hover > a:hover,.navbar-offcanvas .navbar-nav > li:hover > a:focus,.navbar-offcanvas .navbar-nav > li:hover > a,.navbar-offcanvas .navbar-nav > li.collapsable > a:hover,.navbar-offcanvas .navbar-nav > li.collapsable > a:focus,.navbar-offcanvas .navbar-nav > li.collapsable > a,.navbar-offcanvas .navbar-nav > li.open .hitarea:after,.navbar-offcanvas .navbar-nav > li.active .hitarea:after,.navbar-offcanvas .navbar-nav > li:hover .hitarea:after,.navbar-offcanvas .navbar-nav > li.collapsable .hitarea:after,.navbar-offcanvas .dropdown-menu > li.active > a,.navbar-offcanvas .dropdown-menu > li > a:hover,.navbar-offcanvas .dropdown-menu > li > a:focus,.treeview li.expandable > .hitarea:hover::after,.treeview li.collapsable > .hitarea:hover::after,.tbay-vertical li a.selected,.tbay-vertical li a:hover,.tbay-vertical li a.selected i,.tbay-vertical li a:hover i,.tbay-vertical .tbay-addon-nav-menu li a:hover,body:not(.tbay-body-default) .widget.yith-woocompare-widget a.compare:hover,body:not(.tbay-body-default) .widget_search .btn:hover i,body:not(.tbay-body-default) .widget_recent_entries > ul li a,body:not(.tbay-body-default) .widget_product_categories .product-categories a:hover,body:not(.tbay-body-default) .widget_product_categories ul a:hover,body:not(.tbay-body-default) .widget_categories .product-categories a:hover,body:not(.tbay-body-default) .widget_categories ul a:hover,body:not(.tbay-body-default) .widget_product_categories .product-categories .current-cat > a,body:not(.tbay-body-default) .widget_product_categories ul .current-cat > a,body:not(.tbay-body-default) .widget_categories .product-categories .current-cat > a,body:not(.tbay-body-default) .widget_categories ul .current-cat > a,.woof_list_label li .woof_label_term:hover,.woof_list_label li .woof_label_term.checked,ul.woof_list li .hover,ul.woof_list label.woof_radio_label_selected,ul.woof_list label:hover,ul.woof_list.woof_list_checkbox li label:hover,ul.woof_list.woof_list_checkbox li label.woof_checkbox_label_selected,.tagcloud a:hover,ul.list-tags li a:hover,.show-all:hover,.widget_pages > ul li.current-cat a,.widget_meta > ul li.current-cat a,.widget_archive > ul li.current-cat a,.widget_pages > ul li a:hover,.widget_meta > ul li a:hover,.widget_archive > ul li a:hover,.widget_urna_popup_newsletter .popup-content > span:hover , .wpml-ls-legacy-dropdown a:hover, .wpml-ls-legacy-dropdown a:focus, .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,.tbay-breadscrumb .breadcrumb li a:hover,.tbay-breadscrumb .product-nav-icon .img-link:hover,.urna-back-btn:hover , div[class^=wp-block-] a,figure[class^=wp-block-] a,ul[class^=wp-block-] a, .tbay-body-default .main-page a, .tbay-body-default .entry-single a , div[class^=wp-block-] a:active,figure[class^=wp-block-] a:active,ul[class^=wp-block-] a:active,.tbay-body-default .main-page a:active,div[class^=wp-block-] a:hover,figure[class^=wp-block-] a:hover,ul[class^=wp-block-] a:hover,.tbay-body-default .main-page a:hover,.product-block.v1 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v1 .group-buttons > div a.added,.product-block.v1 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v1 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v2 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v2 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v2 .yith-compare a.added,.product-block.v3 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v3 .group-buttons > div a.added,.product-block.v3 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v3 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v4 .add-cart a,.product-block.v4 .add-cart a.added + a.added_to_cart:hover,.product-block.v4 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v4 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v4 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v4 .yith-compare a.added,.product-block.v5 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v5 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v5 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v5 .add-cart a.added + a.added_to_cart,.product-block.v5 .yith-compare a.added,.product-block.v5 .tbay-product-slider-gallery .slick-arrow:hover,.product-block.v6 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v6 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v6 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v6 .yith-compare a.added,.product-block.v6 .tbay-product-slider-gallery .slick-arrow:hover,.product-block.v7 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v7 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v7 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v7 .add-cart a.added + a.added_to_cart,.product-block.v7 .yith-compare a.added,.product-block.v8 ul.show-brand a:hover,.product-block.v8 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v8 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v8 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v8 .yith-compare a.added,.product-block.v9 .tbay-product-slider-gallery .slick-arrow:hover,.product-block.v9 .group-buttons > div a.added,.product-block.v9 .add-cart a,.product-block.v9 .button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v9 .yith-wcwl-wishlistexistsbrowse a,.product-block.v9 .yith-wcwl-wishlistaddedbrowse a,.product-block.v9 .name a:hover,.woocommerce .product-block.list-v9 span.onsale .saled,.product-block.v10 .name a:hover,.product-block.v10 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v10 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v10 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v10 .yith-compare a.added,.product-block.v11 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v11 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v11 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v11 .add-cart a,.product-block.v11 .yith-compare a.added,.product-block.v12 .add-cart a,.product-block.v12 .add-cart a.added + a.added_to_cart:hover,.product-block.v12 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v12 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v12 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v12 .yith-compare a.added,.product-block.v12 .yith-wcwl-wishlistexistsbrowse.show a,.product-block.v12 .yith-wcwl-wishlistaddedbrowse.show a,.product-block.v13 .tbay-product-slider-gallery .slick-arrow:hover,.product-block.v13 .yith-wcwl-add-button a.delete_item,.product-block.v13 .yith-wcwl-wishlistexistsbrowse a,.product-block.v13 .yith-wcwl-wishlistaddedbrowse a,.product-block.v13 .yith-compare a.added,.product-block.v15.product-quantity-mode .group-add-cart .add-cart a:hover,.product-block.v15.product-quantity-mode .quantity button:hover i,.product-block.v15.product-quantity-mode .quantity input.qty:hover i,.product-block.v15 .tbay-product-slider-gallery .slick-arrow:hover,.product-block.v15 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v15 .group-buttons > div a.added,.product-block.v15 .group-buttons .yith-wcwl-wishlistexistsbrowse a,.product-block.v15 .group-buttons .yith-wcwl-wishlistaddedbrowse a,.product-block.v15 .name a:hover,.product-block.v16 .button-wishlist a:hover,.product-block.v16 .button-wishlist.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v16 .yith-wcwl-wishlistexistsbrowse a,.product-block.v16 .yith-wcwl-wishlistaddedbrowse a,.product-block.v16 .group-buttons > div a:hover,.product-block.v16 .group-buttons > div a.added,.product-block.v16 .tbay-product-slider-gallery .slick-arrow:hover,.tbay-addon-features .inner:hover .fbox-icon , .tbay-addon-features.style-2 .fbox-image,.tbay-addon-features.style-2 .fbox-icon , .tbay-addon-features.style-3 .ourservice-heading , .tbay-addon-blog .readmore,.tbay-addon-instagram .btn-follow:hover,.tbay-addon-instagram .btn-follow:hover span,.ourteam-inner .social-link a:hover,.social.style3 li a:hover,.product-block .add-cart a.added + a.added_to_cart,.product-block ul.show-brand a:hover,.product-block .yith-wcwl-wishlistexistsbrowse a,.product-block .yith-wcwl-wishlistaddedbrowse a,.product-block .name a:hover,.tbay-addon-categories .cat-name:hover,.flash-sales-date .times,.elements .vc_row .flash-sales-date .times,.tbay-addon-product-tabs .nav-tabs > li.active > a,.tbay-addon-product-tabs .nav-tabs > li.active > a:hover,.tbay-addon-product-tabs .nav-tabs > li.active > a:focus,.tbay-addon-product-tabs .nav-tabs > li:hover > a,.tbay-addon-product-tabs .nav-tabs > li:hover > a:hover,.tbay-addon-product-tabs .nav-tabs > li:hover > a:focus,.tbay-addon-categoriestabs .nav-tabs > li.active > a,.tbay-addon-categoriestabs .nav-tabs > li.active > a:hover,.tbay-addon-categoriestabs .nav-tabs > li.active > a:focus,.tbay-addon-categoriestabs .nav-tabs > li:hover > a,.tbay-addon-categoriestabs .nav-tabs > li:hover > a:hover,.tbay-addon-categoriestabs .nav-tabs > li:hover > a:focus,.recent-view.tbay-addon-header-recently-viewed h3:hover,.elementor-element .canvas-menu-sidebar .menu li > a:hover,.element-menu-canvas .menu-canvas-content .tbay-vertical .navbar-nav .dropdown-menu > li > a:hover,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li.active > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li:hover > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li:focus > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li.active > a .caret,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li:hover > a .caret,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li:focus > a .caret,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li .dropdown-menu > li.active > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li .dropdown-menu > li:hover :focus > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li.active-mega-menu .dropdown-menu ul > li.active > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li.active-mega-menu .dropdown-menu ul > li > a:hover,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav > li.active-mega-menu .dropdown-menu ul > li > a:focus,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .dropdown-menu > li:hover > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .dropdown-menu > li.active > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .dropdown-menu > li:focus > a,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .dropdown-menu > li > a:hover,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .dropdown-menu .tbay-addon ul:not(.entry-meta-list) li > a:hover,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .dropdown-menu .tbay-addon ul:not(.entry-meta-list) li.active a,.navbar-offcanvas .navbar-nav > li.open > a:hover,.navbar-offcanvas .navbar-nav > li.open > a:focus,.navbar-offcanvas .navbar-nav > li.open > a,.navbar-offcanvas .navbar-nav > li.active > a:hover,.navbar-offcanvas .navbar-nav > li.active > a:focus,.navbar-offcanvas .navbar-nav > li.active > a,.navbar-offcanvas .navbar-nav > li:hover > a:hover,.navbar-offcanvas .navbar-nav > li:hover > a:focus,.navbar-offcanvas .navbar-nav > li:hover > a,.navbar-offcanvas .navbar-nav > li.collapsable > a:hover,.navbar-offcanvas .navbar-nav > li.collapsable > a:focus,.navbar-offcanvas .navbar-nav > li.collapsable > a,.navbar-offcanvas .navbar-nav > li.open .hitarea:after,.navbar-offcanvas .navbar-nav > li.active .hitarea:after,.navbar-offcanvas .navbar-nav > li:hover .hitarea:after,.navbar-offcanvas .navbar-nav > li.collapsable .hitarea:after,.navbar-offcanvas .dropdown-menu > li.active > a,.navbar-offcanvas .dropdown-menu > li > a:hover,.navbar-offcanvas .dropdown-menu > li > a:focus,.tbay-treeview .navbar-nav > li.active-mega-menu .dropdown-menu ul > li > a:hover,.tbay-treeview .navbar-nav > li.menu-item-has-children .dropdown-menu ul > li > a:hover,.elementor-widget-tbay-nav-menu .tbay-treevertical-lv1 > .navbar-nav > li > a:hover,.elementor-widget-tbay-nav-menu .tbay-treevertical-lv1 > .navbar-nav > li > a.selected,.elementor-widget-tbay-nav-menu .tbay-treevertical-lv1 > .navbar-nav > li > a:hover,.elementor-widget-tbay-nav-menu .tbay-treevertical-lv1 > .navbar-nav > li > a.selected i,.elementor-widget-tbay-nav-menu .tbay-treevertical-lv1 > .navbar-nav > li > a:hover i,.tbay-vertical .dropdown-menu > li > a:hover,.tbay-vertical .sub-menu > li > a:hover,.tbay-vertical .dropdown-menu .tbay-vertical > .navbar-nav > li > a:hover,.tbay-vertical .sub-menu .tbay-vertical > .navbar-nav > li > a:hover,.menu-canvas-content .tbay-vertical .navbar-nav > li:hover > a,.menu-canvas-content .tbay-vertical .navbar-nav > li:hover > a i,.menu-canvas-content .tbay-vertical .navbar-nav li > a.selected,.menu-canvas-content .tbay-vertical .navbar-nav li > a:hover,.menu-canvas-content .tbay-vertical .navbar-nav li > a.selected i,.menu-canvas-content .tbay-vertical .navbar-nav li > a.selected .caret,.menu-canvas-content .tbay-vertical .navbar-nav li > a:hover i,.menu-canvas-content .tbay-vertical .navbar-nav li > a:hover .caret,.menu-canvas-content .tbay-vertical .navbar-nav .tbay-addon-nav-menu li a:hover,.post .entry-category.type-2 a,.entry-meta-list .entry-author a,.entry-title a:hover,.style-grid .post .entry-category a,.related-posts .post .entry-category a,.post-area .entry-meta,.post-area .entry-meta a,.entry-single .entry-category a,#comments .comment-reply-link,#comments .comment-reply-title #cancel-comment-reply-link,#comments .comment-edit-link,.flex-control-nav > .slick-arrow:hover,.woocommerce-currency-switcher-form .SumoSelect > .CaptionCont:hover,.woocommerce-currency-switcher-form .SumoSelect > .CaptionCont:hover label i:after,.SumoSelect > .optWrapper > .options li.opt:hover,.SumoSelect > .optWrapper > .options li.opt.selected,.mm-menu .mm-panels > .mm-panel > .mm-navbar + .mm-listview li a:hover,.mm-menu .mm-panels > .mm-panel > .mm-navbar + .mm-listview li a:focus,.mm-menu .mm-panels > .mm-panel > .mm-navbar + .mm-listview li.active > a,.mm-menu .mm-panels > .mm-panel > .mm-navbar + .mm-listview li.active .mm-counter,.mm-menu .mm-navbar_tabs a,.mm-menu .mm-navbars_bottom .mm-navbar a:hover,.mm-menu .mm-navbars_bottom .mm-navbar a:focus , .yith-wfbt-section .yith-wfbt-item input[type=checkbox]:checked + i,#cboxClose:hover:before,#cboxClose:focus:before,#tbay-quick-view-modal .mfp-close:hover,span.question a:hover,#show-all-questions a.show-questions:hover ,.wishlist_table.mobile li .additional-info-wrapper .product-remove a:hover,.all-subcategories a:hover h3,.product-top-sidebar .button-product-top:focus,.product-top-sidebar .button-product-top:hover,.tbay-filter .display-mode-btn.active,.tbay-filter .display-mode-btn:hover,.tbay-filter .SumoSelect > .CaptionCont:hover,.tbay-filter .SumoSelect.open .CaptionCont,.woof_list > label:hover,.woof_list input:checked + label,.woof_list input[checked=checked] + label,.woof_childs_list_opener:hover,.tbay-ajax-filter-btn .btn:hover,.tbay-ajax-filter-btn .btn:focus,.tbay-ajax-filter-btn.active .btn,.tbay-ajax-filter-btn.active i:not(.filter-icon) , .cart-dropdown .subtotal,.top-cart .cart_list .product-name:hover,.top-cart .cart_list a.remove:hover i,.top-cart .cart_empty a.wc-continue ,.top-cart .product-image a.remove:hover i,#product-size-guide .close:hover i,#product-size-guide .close:focus i,.btn-size-guide:hover , .singular-shop div.product .tbay-wishlist a:hover,.singular-shop div.product .tbay-wishlist a.added,.singular-shop div.product .tbay-compare a:hover,.singular-shop div.product .tbay-compare a.added , .singular-shop div.product .tbay-wishlist a.delete_item , .singular-shop div.product .yith-wcwl-wishlistexistsbrowse a,.singular-shop div.product .yith-wcwl-wishlistaddedbrowse a,.singular-shop div.product .product_meta > span a:hover,.woocommerce .quantity button:focus,.woocommerce .quantity button:hover,.woocommerce-page .quantity button:focus,.woocommerce-page .quantity button:hover,.product-nav > .link-images > .psnav .single_nav .single_nav a:hover,.product-nav > .link-images > .psnav .single_nav .single_nav a:focus,.product-nav .single_nav a:hover,.product-nav .single_nav a:focus,.woocommerce div.product div.images .woocommerce-product-gallery__trigger:hover,body div.product div.images .woocommerce-product-gallery__trigger:hover , .woocommerce-grouped-product-list-item__price ,  #reviews .wcpr-overall-rating-left,.wvs-css .variable-items-wrapper .variable-item:not(.radio-variable-item).selected,.wvs-css .variable-items-wrapper .variable-item:not(.radio-variable-item).selected:hover,.wvs-css .variable-items-wrapper .variable-item:not(.radio-variable-item):hover,.tawcvs-swatches .swatch.selected,.tawcvs-swatches .swatch:hover , .woocommerce-grouped-product-list-item__quantity .add-cart a.button,#sticky-menu-bar li.current a,#sticky-menu-bar li:hover a,#sticky-menu-bar li:focus a,#sticky-menu-bar li a:hover,#sticky-menu-bar li a:focus,.form-cart-popup form.cart #mobile-close-infor i:hover,.shop_table.cart a.remove:hover i,.cart_totals table tr.shipping .button,.cart_totals table * tr.shipping .button,.cart_totals table tr.shipping .button:hover,.cart_totals table * tr.shipping .button:hover,.cart_totals .shipping-calculator-form p:not(.form-row),.cart-bottom .continue-to-shop a:hover,.cart-bottom .update-cart:hover,.cart-bottom .update-cart:hover .update,.cart-bottom .update:hover,.cart-bottom .update:focus,.woocommerce table.shop_table.account-orders-table a,.woocommerce table.shop_table.order_details a,.woocommerce table.shop_table.my_account_orders a,.woocommerce table.shop_table.dokan-rma-order-item-table a , .cart-collaterals .shipping-calculator-button , .woocommerce .shop_table .product-name > a , .woocommerce .woocommerce-MyAccount-content a:not(.woocommerce-button):not(.vendor-dashboard),.woocommerce form.login .lost_password a,.woocommerce form.register .lost_password a,.woocommerce .woocommerce-form-login-toggle .woocommerce-info a,.woocommerce .woocommerce-form-login-toggle .woocommerce-message a,.woocommerce .woocommerce-form-coupon-toggle .woocommerce-info a,.woocommerce .woocommerce-form-coupon-toggle .woocommerce-message a,.woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper a,#custom-register a.text-link,#custom-login a.text-link,#custom-register .vendor-register a,.sold-by-meta > a:hover , .dokan-message a,.dokan-dashboard .pagination-wrap > ul.pagination > li span:hover,.dokan-dashboard .pagination-wrap > ul.pagination > li a:hover , ul.subsubsub li.active a , #dokan-store-listing-filter-wrap .right .toggle-view .active,#dokan-seller-listing-wrap .pagination-container .pagination-wrap ul.pagination li a:hover,#dokan-seller-listing-wrap.grid-view .wrapper-dokan button:hover , .dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info .dokan-store-info i,.dokan-withdraw-content .dokan-withdraw-area ul li.active a,.become-vendor #tbay-main-content .tbay-addon-features:not(.style-2):not(.style-3) .inner:hover .fbox-icon , .become-vendor #tbay-main-content .tbay-addon-features:not(.style-2):not(.style-3) .fbox-icon,.dokan-orders-content .dokan-orders-area > a.dokan-btn:hover ,.wcmp_regi_main .register .woocommerce-privacy-policy-text a,#wcmp-store-conatiner .wcmp-store-list .wcmp-store-detail-wrap .wcmp-store-detail-list li .store-name:hover,#wcmp-store-conatiner .wcmp-store-list .wcmp-store-detail-wrap .wcmp-store-detail-list li .wcmp_vendor_detail,#custom-register .wcfmmp_become_vendor_link a , #wcfmmp-store ins,#wcfmmp-store .woocommerce-product-search button:hover:before,#wcfmmp-store .categories_list ul li a:hover,#wcfmmp-store .categories_list ul li a:focus , .product-block .wcfmmp_sold_by_wrapper a:hover,.product-block .wcfmmp_sold_by_wrapper a:focus,.woocommerce form.register .wcfmmp_become_vendor_link a,.wcv-dashboard-navigation ul li a:hover,table.table-vendor-sales-report a,table.table-vendor-sales-report tr td.product a , .shop_settings #main-container form #pv_shop_description_container > p a,form[name=export_orders] ~ table.table .order-comments-link,.product-block .wcvendors_sold_by_in_loop a:hover,.wcvendors-pro-dashboard-wrapper .wcv-navigation ul.menu li a:hover,.wcvendors-pro-dashboard-wrapper .wcv-navigation ul.menu li.active a,.wcvendors-pro-dashboard-wrapper .wcv-tabs.top .tabs-nav li a ,table.wcv-table.wcvendors-table-product a:hover , table.wcv-table.wcvendors-table-product .row-actions-product a , table.wcvendors-table-order .row-actions-order a,table.wcvendors-table-shop_coupon .row-actions-shop_coupon a,.wcv-store-header.header-modern .meta .social-icons a:hover,.elements .custom-flash-sale .flash-sales-date .times ,.btn-link:hover,.btn-link:focus,.has-after:hover,button.btn-close:hover,.new-input + span:before,.new-input + label:before{color:#ca0815;}.has-after:after,.post .entry-category.type-2 a:after,.entry-meta-list .entry-author a:after,.entry-single .entry-category a:after,.woocommerce form.login .lost_password a:after,.woocommerce form.register .lost_password a:after,.woocommerce form.register .wcfmmp_become_vendor_link a:after,.tbay-search-form .button-group , .text-label , .icon-preview-box:hover .preview,#awesome-font .fontawesome-icon-list .fa-hover:hover .preview,.carousel .carousel-indicators .active,.cart-dropdown .cart-icon .mini-cart-items,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:hover , .btn-theme-2,.woocommerce-pagination a.button,.widget_price_filter .price_slider_amount .button,.tbay-addon.tbay-addon-banner .tbay-addon-content .button,.tbay-addon-newsletter input[type=submit], .tbay-addon-newsletter button[type=submit],.widget-newletter input[type=submit], .widget-newletter button[type=submit],.post-list .readmore,.post-grid .readmore,.entry-single .entry-description a,.entry-single .author-info .all-post,.post-password-form input[type=submit],#comments #respond .form-submit input,#reviews #respond .form-submit input,.wpcf7-form .form-horizontal .wpcf7-submit,.page-404 .page-content .backtohome,.woocommerce .yith-wfbt-submit-block .yith-wfbt-submit-button-remove,body table.compare-list .add-to-cart td a.button,body table.compare-list .add-to-cart td a.button + a,input#ywqa-submit-question,div#new-answer-header .ywqa_submit_answer,.woocommerce table.wishlist_table.shop_table .product-add-to-cart .add-cart a,.wishlist_table.mobile .product-add-to-cart .add-cart a,.products-list .product-block .group-buttons > div.add-cart a,.top-cart .tbay-dropdown-cart ul.cart_empty a.wc-continue,.top-cart .cart_list.woocommerce-mini-cart + .woocommerce-mini-cart__total + .woocommerce-mini-cart__buttons a.checkout,.top-cart .group-button p.buttons a.button.checkout,.woocommerce button.button[name=track],.singular-shop div.product .single_add_to_cart_button,#sticky-menu-bar #sticky-custom-add-to-cart,.mobile-btn-cart-click #tbay-click-addtocart,.cart_totals .wc-proceed-to-checkout a.checkout-button,.coupon .box input[type=submit],.woocommerce form.login > p.last .button,.woocommerce form.register > p.last .button,.woocommerce-order-received .order-again a,.woocommerce form.checkout_coupon > p.form-row-last .button,.woocommerce-checkout-payment .place-order button.button.alt,#custom-register input.submit_button,#custom-login input.submit_button,input[type=submit].dokan-btn,a.dokan-btn-theme,.dokan-btn-theme,.dokan-btn-success,input[type=submit].dokan-btn[disabled],a.dokan-btn-theme[disabled],.dokan-btn-theme[disabled],.dokan-btn-success[disabled],.dokan-dashboard .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit],#dokan-seller-listing-wrap .store-footer > a,.dokan-orders-content #dokan-order-status-form a.dokan-cancel-status,.wcmp_regi_main .register .button,#report_abuse_form button.submit-report-abuse,.vendor_sidebar .widget_wcmp_quick_info #respond input#submit,#wcmp-store-conatiner .wcmp-store-locator-wrap .wcmp-store-map-pagination .vendor_sort input[type=submit],#wcmp-store-conatiner .wcmp-store-map-filter input[type=submit],#wcfm-main-contentainer .wcfm-membership-wrapper input[type=submit],#wcfm-main-contentainer .wcfm_form_simple_submit_wrapper .wcfm_submit_button,.wcfm_popup_wrapper .wcfm_popup_button,#wcfmmp-store #reviews .add_review button,.form-row input[name=apply_for_vendor_submit],form.wcv-form .wcv-button[type=submit],.dashboard .wcv-dashboard-navigation ~ form input[type=submit],.shop_settings input[name=vendor_application_submit],form[name=export_orders] input,.wcvendors-pro-dashboard-wrapper input#update_button,.wcvendors-pro-dashboard-wrapper .wcv-search-form .wcv-button,.wcv-form .control-group .control > input.wcv-button:not(#clear_button),table.wcvendors-table-order .wcv-shade.wcv-fade .order_note_form input[type=submit],table.wcvendors-table-order form #tracking_number_save_button,form#wcv-store-settings input#store_save_button,.wcv_store_search form input[type=submit],.wcv_vendor_search form input[type=submit],.wpmc-steps-wrapper ~ .wpmc-nav-wrapper button[type=button] , .top-wishlist .count_wishlist,.navbar-offcanvas .navbar-nav > li > a:before,.treeview .sub-menu a:hover:before , body:not(.tbay-body-default) .widget.yith-woocompare-widget a.compare,ul.woof_list.woof_list_color li .woof_label_count,ul.woof_list.woof_list_label li .woof_label_count , .woocommerce .widget_price_filter .ui-slider .ui-slider-range , .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,.widget_urna_popup_newsletter .popup-content > span:hover:before,.product-block.v2 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v2 .group-buttons .yith-wcwl-wishlistexistsbrowse a:hover,.product-block.v2 .group-buttons .yith-wcwl-wishlistexistsbrowse a:focus,.product-block.v2 .group-buttons .yith-wcwl-wishlistaddedbrowse a:hover,.product-block.v2 .group-buttons .yith-wcwl-wishlistaddedbrowse a:focus,.product-block.v10 .name a:hover:before,.product-block.v10 .group-buttons > div a:hover,.product-block.v14 .group-buttons > div a.added,.product-block.v14 .group-buttons > div a.added + a.added_to_cart,.product-block.v14 .button-wishlist a:hover,.product-block.v14 .button-wishlist a:focus,.product-block.v14 .button-wishlist .yith-wcwl-wishlistexistsbrowse a,.product-block.v14 .button-wishlist .yith-wcwl-wishlistaddedbrowse a,.product-block.v14 .button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v15:hover .group-add-cart:hover,.product-block.v15.product-quantity-mode .group-add-cart .add-cart,.tbay-addon-blog .entry-category a,.product-block .group-buttons > div a:hover,.tbay-product-slider-gallery .slick-arrow:hover,.tbay-addon.product-countdown .tbay-addon-content .owl-carousel:before,.tbay-addon.product-countdown .tbay-addon-content .owl-carousel:after , .tbay-addon-flash-sales.tbay-addon-carousel .tbay-addon-content .owl-carousel:before,.tbay-addon-flash-sales.tbay-addon-carousel .tbay-addon-content .owl-carousel:after,.elements .vc_row .flash-sales-date .times > div span,.tbay-element.search-form-popup .search-form-modal .close:hover,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .text-label.label-hot,.treeview .sub-menu a:hover:before , .link-wrap,.page-links > span:not(.page-links-title),.page-links a:hover,.slick-dots li.slick-active button,.owl-carousel > .slick-arrow:hover,.owl-carousel > .slick-arrow:focus,.slider > .slick-arrow:hover,.slider > .slick-arrow:focus,body table.compare-list .add-to-cart td a.button:hover,body table.compare-list .add-to-cart td a.button:active:hover,body table.compare-list .add-to-cart td a.button:focus,body table.compare-list .add-to-cart td a.button + a:hover,body table.compare-list .add-to-cart td a.button + a:active:hover,body table.compare-list .add-to-cart td a.button + a:focus,.carousel .carousel-controls-v3 .carousel-control:hover,div.question-text .question-symbol,.woocommerce table.wishlist_table.shop_table > tbody > tr .product-remove.icon a,.tparrows:hover,.tp-bullets.revo-tbay .tp-bullet.selected,.tp-bullets.revo-tbay .tp-bullet:hover,.products-list .product-block .group-buttons > div + div.button-wishlist .yith-wcwl-add-to-wishlist.exists a,.products-list .product-block .group-buttons > div a:hover,.products-list .product-block .group-buttons .yith-wcwl-wishlistexistsbrowse a,.products-list .product-block .group-buttons .yith-wcwl-wishlistaddedbrowse a,.products-list .product-block .group-buttons .yith-compare a.added,.btn-size-guide:hover:before,.singular-shop div.product .single_add_to_cart_button.disabled,.singular-shop div.product .single_add_to_cart_button.disabled:hover,.singular-shop div.product .single_add_to_cart_button.disabled:focus , .progress-bar,.woocommerce-tabs-mobile .wc-tab-mobile .tab-head,.shop_table.cart .cart-bottom > *.update:hover,.shop_table.cart .cart-bottom > * a:hover,.cart_totals .wc-proceed-to-checkout a.checkout-button:hover,.woocommerce .woocommerce-MyAccount-navigation ul li.is-active a,.woocommerce .woocommerce-MyAccount-navigation ul li:hover a,.woocommerce .woocommerce-MyAccount-navigation ul li:focus a , input[type=submit].dokan-btn:active,input[type=submit].dokan-btn:focus,a.dokan-btn-theme:active,a.dokan-btn-theme:focus,.dokan-btn-theme:active,.dokan-btn-theme:focus,.dokan-btn-success:active,.dokan-btn-success:focus,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:hover,#report-abuse table input[type=submit],#report-abuse table input[type=submit]:hover , .vendor_sidebar .widget_wcmp_quick_info #respond input#submit,.has-after:after , .btn-theme-2 , #tbay-header .header-mainmenu{background-color:#ca0815;}.pagination a:hover,.tbay-pagination a:hover,.woocommerce-pagination a:hover , .btn-theme-2,.woocommerce-pagination a.button,.widget_price_filter .price_slider_amount .button,.tbay-addon.tbay-addon-banner .tbay-addon-content .button,.tbay-addon-newsletter input[type=submit], .tbay-addon-newsletter button[type=submit],.widget-newletter input[type=submit], .widget-newletter button[type=submit],.post-list .readmore,.post-grid .readmore,.entry-single .entry-description a,.entry-single .author-info .all-post,.post-password-form input[type=submit],#comments #respond .form-submit input,#reviews #respond .form-submit input,.wpcf7-form .form-horizontal .wpcf7-submit,.page-404 .page-content .backtohome,.woocommerce .yith-wfbt-submit-block .yith-wfbt-submit-button-remove,body table.compare-list .add-to-cart td a.button,body table.compare-list .add-to-cart td a.button + a,input#ywqa-submit-question,div#new-answer-header .ywqa_submit_answer,.woocommerce table.wishlist_table.shop_table .product-add-to-cart .add-cart a,.wishlist_table.mobile .product-add-to-cart .add-cart a,.products-list .product-block .group-buttons > div.add-cart a,.top-cart .tbay-dropdown-cart ul.cart_empty a.wc-continue,.top-cart .cart_list.woocommerce-mini-cart + .woocommerce-mini-cart__total + .woocommerce-mini-cart__buttons a.checkout,.top-cart .group-button p.buttons a.button.checkout,.woocommerce button.button[name=track],.singular-shop div.product .single_add_to_cart_button,#sticky-menu-bar #sticky-custom-add-to-cart,.mobile-btn-cart-click #tbay-click-addtocart,.cart_totals .wc-proceed-to-checkout a.checkout-button,.coupon .box input[type=submit],.woocommerce form.login > p.last .button,.woocommerce form.register > p.last .button,.woocommerce-order-received .order-again a,.woocommerce form.checkout_coupon > p.form-row-last .button,.woocommerce-checkout-payment .place-order button.button.alt,#custom-register input.submit_button,#custom-login input.submit_button,input[type=submit].dokan-btn,a.dokan-btn-theme,.dokan-btn-theme,.dokan-btn-success,input[type=submit].dokan-btn[disabled],a.dokan-btn-theme[disabled],.dokan-btn-theme[disabled],.dokan-btn-success[disabled],.dokan-dashboard .wpuf-form-add.wpuf-style ul.wpuf-form .wpuf-submit input[type=submit],#dokan-seller-listing-wrap .store-footer > a,.dokan-orders-content #dokan-order-status-form a.dokan-cancel-status,.wcmp_regi_main .register .button,#report_abuse_form button.submit-report-abuse,.vendor_sidebar .widget_wcmp_quick_info #respond input#submit,#wcmp-store-conatiner .wcmp-store-locator-wrap .wcmp-store-map-pagination .vendor_sort input[type=submit],#wcmp-store-conatiner .wcmp-store-map-filter input[type=submit],#wcfm-main-contentainer .wcfm-membership-wrapper input[type=submit],#wcfm-main-contentainer .wcfm_form_simple_submit_wrapper .wcfm_submit_button,.wcfm_popup_wrapper .wcfm_popup_button,#wcfmmp-store #reviews .add_review button,.form-row input[name=apply_for_vendor_submit],form.wcv-form .wcv-button[type=submit],.dashboard .wcv-dashboard-navigation ~ form input[type=submit],.shop_settings input[name=vendor_application_submit],form[name=export_orders] input,.wcvendors-pro-dashboard-wrapper input#update_button,.wcvendors-pro-dashboard-wrapper .wcv-search-form .wcv-button,.wcv-form .control-group .control > input.wcv-button:not(#clear_button),table.wcvendors-table-order .wcv-shade.wcv-fade .order_note_form input[type=submit],table.wcvendors-table-order form #tracking_number_save_button,form#wcv-store-settings input#store_save_button,.wcv_store_search form input[type=submit],.wcv_vendor_search form input[type=submit],.wpmc-steps-wrapper ~ .wpmc-nav-wrapper button[type=button] , body:not(.tbay-body-default) .widget.yith-woocompare-widget a.compare,.woof_list_label li .woof_label_term:hover,.woof_list_label li .woof_label_term.checked,ul.woof_list li > div.checked,ul.woof_list li > div:hover,.tagcloud a:hover,ul.list-tags li a:hover,.product-block.v1 .group-buttons > div a:hover,.product-block.v2 .group-buttons > div.button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v2 .group-buttons > div a:hover,.product-block.v2 .group-buttons .yith-wcwl-wishlistexistsbrowse a:hover,.product-block.v2 .group-buttons .yith-wcwl-wishlistexistsbrowse a:focus,.product-block.v2 .group-buttons .yith-wcwl-wishlistaddedbrowse a:hover,.product-block.v2 .group-buttons .yith-wcwl-wishlistaddedbrowse a:focus,.product-block.v4 .group-buttons > div a:hover,.product-block.v5 .group-buttons > div a:hover,.product-block.v6 .group-buttons > div a:hover,.product-block.v7 .group-buttons > div a:hover,.product-block.v8 ul.show-brand a:hover,.product-block.v8 .group-buttons > div a:hover,.product-block.v8 .group-buttons > div:last-child a:hover,.product-block.v9 .group-buttons > div a:hover,.product-block.v9 .tbay-swatches-wrapper li a.variable-item-span-image:hover,.product-block.v10 .group-buttons > div a:hover,.product-block.v10 .group-buttons > div:last-child a:hover,.product-block.v11 .group-buttons > div a:hover,.product-block.v11 .group-buttons > div:last-child a:hover,.product-block.v13 .group-buttons > div a:hover,.product-block.v14 .group-buttons > div a:hover,.product-block.v14 .group-buttons > div a.added,.product-block.v14 .group-buttons > div a.added + a.added_to_cart,.product-block.v14 .button-wishlist a:hover,.product-block.v14 .button-wishlist a:focus,.product-block.v14 .button-wishlist .yith-wcwl-wishlistexistsbrowse a,.product-block.v14 .button-wishlist .yith-wcwl-wishlistaddedbrowse a,.product-block.v14 .button-wishlist .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button a.delete_item,.product-block.v15 .group-buttons > div a:hover,.tbay-product-slider-gallery .slick-arrow:hover,.tbay-addon-vertical .product-block:hover .image,.widget-carousel-vertical .product-block:hover .image , .tbay-addon.product-countdown .tbay-addon-content,body.tbay-homepage-demo .product-recently-viewed .product-image:hover,.recent-view .product-item img:hover,.page-links > span:not(.page-links-title),.page-links a:hover,.owl-carousel > .slick-arrow:hover,.owl-carousel > .slick-arrow:focus,.slider > .slick-arrow:hover,.slider > .slick-arrow:focus,.mm-menu .mm-panels > .mm-panel > .mm-navbar + .mm-listview li a .mm-btn_next:hover:after,.mm-menu .mm-panels > .mm-panel > .mm-navbar + .mm-listview li.active .mm-btn_next:after,.yith-wfbt-section .yith-wfbt-images .image-td:hover,body table.compare-list .add-to-cart td a.button:hover,body table.compare-list .add-to-cart td a.button:active:hover,body table.compare-list .add-to-cart td a.button:focus,body table.compare-list .add-to-cart td a.button + a:hover,body table.compare-list .add-to-cart td a.button + a:active:hover,body table.compare-list .add-to-cart td a.button + a:focus,.carousel .carousel-controls-v3 .carousel-control:hover,.tbay-body-woocommerce-catalog-mod .product-block.v1 .group-buttons > div.button-wishlist a:hover,.tbay-body-woocommerce-catalog-mod .product-block.v2 .group-buttons > div.button-wishlist a:hover,.tbay-body-woocommerce-catalog-mod .product-block.v6 .group-buttons > div.tbay-quick-view a:hover,.tbay-body-woocommerce-catalog-mod .product-block.v11 .group-buttons > div.tbay-quick-view a:hover,.tbay-body-woocommerce-catalog-mod .products-list .product-block .group-buttons > div.tbay-quick-view a:hover,.products-list .product-block .group-buttons > div + div.button-wishlist .yith-wcwl-add-to-wishlist.exists a,.products-list .product-block .group-buttons > div.add-cart a,.products-list .product-block .group-buttons > div a:hover,.products-list .product-block .group-buttons .yith-wcwl-wishlistexistsbrowse a,.products-list .product-block .group-buttons .yith-wcwl-wishlistaddedbrowse a,.products-list .product-block .group-buttons .yith-compare a.added,.top-cart .product-image a.remove:hover i,.singular-shop div.product .flex-control-thumbs .slick-list li img.flex-active,.singular-shop div.product .flex-control-thumbs .slick-list li img:hover,.product-nav .single_nav a:hover,.product-nav .single_nav a:focus,.woocommerce div.product div.images .woocommerce-product-gallery__trigger:hover,body div.product div.images .woocommerce-product-gallery__trigger:hover,.wvs-css .variable-items-wrapper .variable-item:not(.radio-variable-item).selected,.wvs-css .variable-items-wrapper .variable-item:not(.radio-variable-item).selected:hover,.wvs-css .variable-items-wrapper .variable-item:not(.radio-variable-item):hover,.wvs-css.tbay-variation-free .variable-items-wrapper .variable-item:not(.radio-variable-item).button-variable-item.selected,.wvs-css.tbay-variation-free .variable-items-wrapper .variable-item:not(.radio-variable-item).button-variable-item.selected:hover,.wvs-css.tbay-variation-free .variable-items-wrapper .variable-item:not(.radio-variable-item).button-variable-item:hover,.tawcvs-swatches .swatch.selected,.tawcvs-swatches .swatch:hover,.tbay-swatches-wrapper li a.variable-item-span-label:hover,.tbay-swatches-wrapper li a.variable-item-span-label.selected,.product_list_widget .product-block:hover .image,.dokan-dashboard .pagination-wrap > ul.pagination > li span:hover,.dokan-dashboard .pagination-wrap > ul.pagination > li a:hover,.dokan-pagination-container ul.dokan-pagination > li:not(.disabled):not(.active):hover a,#dokan-seller-listing-wrap .pagination-container .pagination-wrap ul.pagination li a:hover,.tbay-search-mobile .sumo_product_cat .optWrapper .options li.opt:last-child.selected,.tbay-search-mobile .sumo_category .optWrapper .options li.opt:last-child.selected,.topbar-device-mobile .top-cart a.wc-continue ,.btn-theme-2, .tbay-addon-categories .item-cat:hover, .product-block:hover{border-color:#ca0815;}#tbay-search-form-canvas .tbay-loading:after , #tbay-search-form-canvas.v2 .tbay-loading:after,.elementor-widget-tbay-nav-menu .tbay-horizontal .navbar-nav .text-label.label-hot:before,.display-products.load-ajax:after{border-top-color:#ca0815;}blockquote{border-left-color:#ca0815;}.color-2{color:#ff9c00;}.cart-dropdown .cart-icon .mini-cart-items,.top-wishlist .count_wishlist , ul.woof_list.woof_list_color li .woof_label_count,ul.woof_list.woof_list_label li .woof_label_count{background-color:#ff9c00;}</style>        <script type="text/javascript">
+            var woof_is_permalink =1;
+
+            var woof_shop_page = "";
+        
+            var woof_really_curr_tax = {};
+            var woof_current_page_link = location.protocol + '//' + location.host + location.pathname;
+            /*lets remove pagination from woof_current_page_link*/
+            woof_current_page_link = woof_current_page_link.replace(/\page\/[0-9]+/, "");
+                            woof_current_page_link = "https://shopantik.com/shop/";
+                            var woof_link = 'https://shopantik.com/wp-content/plugins/woocommerce-products-filter/';
+
+                </script>
+
+                <script type="text/javascript">
+
+            var woof_ajaxurl = "https://shopantik.com/wp-admin/admin-ajax.php";
+
+            var woof_lang = {
+                'orderby': "orderby",
+                'date': "date",
+                'perpage': "per page",
+                'pricerange': "price range",
+                'menu_order': "menu order",
+                'popularity': "popularity",
+                'rating': "rating",
+                'price': "price low to high",
+                'price-desc': "price high to low"
+            };
+
+            if (typeof woof_lang_custom == 'undefined') {
+                var woof_lang_custom = {};/*!!important*/
+            }
+
+
+            var woof_is_mobile = 0;
+        
+
+
+            var woof_show_price_search_button = 0;
+            var woof_show_price_search_type = 0;
+        
+            var woof_show_price_search_type = 0;
+
+            var swoof_search_slug = "swoof";
+
+        
+            var icheck_skin = {};
+                        icheck_skin = 'none';
+        
+            var is_woof_use_chosen =1;
+
+        
+
+            var woof_current_values = '[]';
+
+            var woof_lang_loading = "Loading ...";
+
+        
+            var woof_lang_show_products_filter = "show products filter";
+            var woof_lang_hide_products_filter = "hide products filter";
+            var woof_lang_pricerange = "price range";
+
+            var woof_use_beauty_scroll =0;
+
+            var woof_autosubmit =1;
+            var woof_ajaxurl = "https://shopantik.com/wp-admin/admin-ajax.php";
+            /*var woof_submit_link = "";*/
+            var woof_is_ajax = 0;
+            var woof_ajax_redraw = 0;
+            var woof_ajax_page_num =1;
+            var woof_ajax_first_done = false;
+            var woof_checkboxes_slide_flag = true;
+
+
+            /*toggles*/
+            var woof_toggle_type = "text";
+
+            var woof_toggle_closed_text = "-";
+            var woof_toggle_opened_text = "+";
+
+            var woof_toggle_closed_image = "https://shopantik.com/wp-content/plugins/woocommerce-products-filter/img/plus3.png";
+            var woof_toggle_opened_image = "https://shopantik.com/wp-content/plugins/woocommerce-products-filter/img/minus3.png";
+
+
+            /*indexes which can be displayed in red buttons panel*/
+                    var woof_accept_array = ["min_price", "orderby", "perpage", "min_rating","product_visibility","product_cat","product_tag"];
+
+                    /*for extensions*/
+            var woof_ext_init_functions = null;
+        
+
+        
+            var woof_overlay_skin = "default";
+
+            jQuery(function () {
+                try
+                {
+                    woof_current_values = jQuery.parseJSON(woof_current_values);
+                } catch (e)
+                {
+                    woof_current_values = null;
+                }
+                if (woof_current_values == null || woof_current_values.length == 0) {
+                    woof_current_values = {};
+                }
+
+            });
+
+            function woof_js_after_ajax_done() {
+                jQuery(document).trigger('woof_ajax_done');
+                    }
+        </script>
+        	<style id="egf-frontend-styles" type="text/css">
+		p {} h1 {} h2 {} h3 {} h4 {} h5 {} h6 {} 	</style>
+		<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+		:root {
+--font-base: Hind Siliguri;
+--font-headings: Hind Siliguri;
+--font-input: Hind Siliguri;
+}
+body, #content, .entry-content, .post-content, .page-content, .post-excerpt, .entry-summary, .entry-excerpt, .widget-area, .widget, .sidebar, #sidebar, footer, .footer, #footer, .site-footer {
+font-family: "Hind Siliguri";
+ }
+#site-title, .site-title, #site-title a, .site-title a, .entry-title, .entry-title a, h1, h2, h3, h4, h5, h6, .widget-title {
+font-family: "Hind Siliguri";
+ }
+button, .button, input, select, textarea, .wp-block-button, .wp-block-button__link {
+font-family: "Hind Siliguri";
+ }
+	</style>
+	<!-- Fonts Plugin CSS -->
+	<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.3.9"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.3.9"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.5.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.5.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.2.4"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/jquery.validate.js?ver=1.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/ajax-auth-script.js?ver=1.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/bootstrap.min.js?ver=3.3.7"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.5.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/underscore.min.js?ver=1.13.1"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/wp-util.min.js?ver=5.8.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=5.6.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.1.19"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/functions.min.js?ver=1.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/woocommerce.min.js?ver=1.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/skip-link-fix.min.js?ver=1.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.5.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/jquery.autocomplete.min.js?ver=1.0.0"><link rel="preload" as="script" href="https://shopantik.com/wp-content/themes/urna/js/skins/furniture.min.js?ver=1.0"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/wp-embed.min.js?ver=5.8.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/tooltip/js/tooltipster.bundle.min.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/front.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/radio.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/checkbox.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/select.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/mselect.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.jquery.min.js?ver=2.2.4.2"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.4"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.4"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.0.10"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.0.10"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"><link rel="preload" as="script" href="https://shopantik.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.4"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.4"><link rel="preload" as="script" href="https://shopantik.com/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.4"><script src="https://shopantik.com/wp-includes/js/wp-emoji-release.min.js?ver=5.8.2" type="text/javascript" defer=""></script></head>
+<body class="home page-template page-template-elementor_canvas page page-id-11 theme-urna woocommerce-js woo-variation-swatches wvs-theme-urna-child wvs-theme-child-urna wvs-style-squared wvs-attr-behavior-blur wvs-tooltip wvs-css wvs-show-label tbay-homepage-demo skin-furniture singlepage tbay-home layout-product-v12 tbay-variation-free ajax_cart_no-popup tbay-body-mobile-product-two wpb-js-composer js-comp-ver-6.5.0 vc_responsive elementor-default elementor-template-canvas elementor-kit-9 elementor-page elementor-page-11 mobile-hidden-footer header-mobile-v1 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="tablet">
+			<div data-elementor-type="wp-page" data-elementor-id="11" class="elementor elementor-11" data-elementor-settings="[]">
+							<div class="elementor-section-wrap elementor-motion-effects-parent">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-d59a603 elementor-section-full_width elementor-section-content-top elementor-section-height-default elementor-section-height-default" data-id="d59a603" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=SdnjPnLn7ao&quot;,&quot;background_video_start&quot;:33,&quot;background_video_end&quot;:56,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+								<div class="elementor-background-video-container">
+													<iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/SdnjPnLn7ao?controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fshopantik.com&amp;widgetid=1" id="widget2" style="width: 983.111px; height: 553px;"></iframe>
+												</div>
+									<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a7cc5b" data-id="2a7cc5b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-066c8fa elementor-section-full_width elementor-section-content-top elementor-section-height-default elementor-section-height-default" data-id="066c8fa" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-23dfec8" data-id="23dfec8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4047429 animated-slow elementor-widget elementor-widget-heading animated fadeInDown elementor-motion-effects-parent" data-id="4047429" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.2,&quot;sizes&quot;:[]},&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--translateX:9.90136px; --translateY:-8.15827px; transform: translateX(var(--translateX))translateY(var(--translateY));">
+			<h2 class="elementor-heading-title elementor-size-xxl">Hi Guys, I'm</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-db95ab2 elementor-align-right elementor-tablet-align-left elementor-mobile-align-right elementor-widget elementor-widget-button" data-id="db95ab2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/login" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-user"></i>			</span>
+						<span class="elementor-button-text"></span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5029862 animated-slow elementor-widget elementor-widget-heading animated fadeIn" data-id="5029862" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.2,&quot;sizes&quot;:[]},&quot;_animation_delay&quot;:900}" data-widget_type="heading.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--translateX:9.90136px; --translateY:-8.15827px; transform: translateX(var(--translateX))translateY(var(--translateY));">
+			<h2 class="elementor-heading-title elementor-size-xxl">ANTIK MAHMUD</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-882d906 elementor-headline--style-rotate elementor-widget elementor-widget-animated-headline animated fadeInUp elementor-motion-effects-perspective" data-id="882d906" data-element_type="widget" data-settings="{&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;swirl&quot;,&quot;rotating_text&quot;:&quot;Cartoonist \nYoutuber\nWriter&quot;,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.2,&quot;sizes&quot;:[]},&quot;_animation_delay&quot;:1000}" data-widget_type="animated-headline.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--rotateX:0.815827deg; --rotateY:0.990136deg; transform: rotateX(var(--rotateX))rotateY(var(--rotateY));">
+					<h3 class="elementor-headline elementor-headline-animation-type-swirl elementor-headline-letters">
+						<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper" style="width: 114.625px;"><span class="elementor-headline-dynamic-text elementor-headline-text-active" style="opacity: 1;"><span class="elementor-headline-dynamic-letter">C</span><span class="elementor-headline-dynamic-letter">a</span><span class="elementor-headline-dynamic-letter">r</span><span class="elementor-headline-dynamic-letter">t</span><span class="elementor-headline-dynamic-letter">o</span><span class="elementor-headline-dynamic-letter">o</span><span class="elementor-headline-dynamic-letter">n</span><span class="elementor-headline-dynamic-letter">i</span><span class="elementor-headline-dynamic-letter">s</span><span class="elementor-headline-dynamic-letter">t</span><span class="elementor-headline-dynamic-letter">&nbsp;</span></span><span class="elementor-headline-dynamic-text" style="opacity: 1;"><span class="elementor-headline-dynamic-letter">Y</span><span class="elementor-headline-dynamic-letter">o</span><span class="elementor-headline-dynamic-letter">u</span><span class="elementor-headline-dynamic-letter">t</span><span class="elementor-headline-dynamic-letter">u</span><span class="elementor-headline-dynamic-letter">b</span><span class="elementor-headline-dynamic-letter">e</span><span class="elementor-headline-dynamic-letter">r</span></span><span class="elementor-headline-dynamic-text" style="opacity: 1;"><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">W</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">r</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">i</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">t</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">e</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">r</span></span></span>
+					</h3>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-66ae4a6" data-id="66ae4a6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-84bd65e elementor-button-success elementor-align-center animated-slow elementor-tablet-align-left elementor-mobile-align-center elementor-widget elementor-widget-button animated fadeInDown" data-id="84bd65e" data-element_type="widget" data-settings="{&quot;_animation_delay&quot;:400,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">Read Comics</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f1cca35 elementor-widget elementor-widget-image animated wobble elementor-motion-effects-perspective" data-id="f1cca35" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_direction&quot;:&quot;negative&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;_animation_delay&quot;:1000}" data-widget_type="image.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--rotateX:-8.15827deg; --rotateY:-9.90136deg; transform: rotateX(var(--rotateX))rotateY(var(--rotateY));">
+															<img width="1000" height="1000" src="https://shopantik.com/wp-content/uploads/2021/03/ANTIK-WRITINGV-BOOK-1.png" class="attachment-full size-full" alt="" loading="lazy">															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ca10848 elementor-section-full_width elementor-section-height-min-height animated-slow elementor-section-height-default elementor-section-items-middle elementor-motion-effects-element elementor-motion-effects-element-type-background" data-id="ca10848" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;background_motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;background_motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;background_motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]}}"><div class="elementor-motion-effects-container"><div class="elementor-motion-effects-layer" style="width: 110%; height: 110%; --translateX:-78.9994px; --translateY:-4.61297px; transform: translateX(var(--translateX))translateY(var(--translateY));"></div></div>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a640c48" data-id="a640c48" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-aa69c58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="aa69c58" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e34125d" data-id="e34125d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-183e8ea elementor-widget elementor-widget-image animated zoomIn elementor-motion-effects-parent elementor-motion-effects-perspective" data-id="183e8ea" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3.7,&quot;sizes&quot;:[]}}" data-widget_type="image.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--rotateX:15.0928deg; --rotateY:18.3175deg; transform: rotateX(var(--rotateX))rotateY(var(--rotateY));">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/noman-3-pcvdqb8rsz5ixsmjsulglguexjsw7r2tgfv0oa74hc.png" title="noman 3" alt="noman 3">															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8de85ee" data-id="8de85ee" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e40172e animated-slow elementor-widget elementor-widget-text-editor" data-id="e40172e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="font-size: 6rem; font-family: 'Hind Siliguri', sans-serif; line-height: .2;">নোমান <b>#৩</b></p><p style="font-size: 2rem; font-family: 'Hind Siliguri', sans-serif;"><span style="font-weight: 400;">অন্তিক মাহমুদ || ঐশিক জাওয়াদ</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-619c261 elementor-widget elementor-widget-text-editor" data-id="619c261" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 1.5; font-family: 'Hind Siliguri', sans-serif;">নোমান ডাক পেয়েছে এক রেডিও শো তে, জানতে চেয়েছে তার সুপার পাওয়ার কিভাবে পেলো নোমান। আসলেই তো! কাহিনী কি?</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-18cf4d3 elementor-button-success elementor-align-center elementor-widget elementor-widget-button" data-id="18cf4d3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/comic/8dxg5z1cw1" class="elementor-button-link elementor-button elementor-size-xl" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">Read Now</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-55d7f5d elementor-section-full_width elementor-section-height-min-height elementor-reverse-mobile elementor-section-height-default elementor-section-items-middle" data-id="55d7f5d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;none&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d7b5cb4" data-id="d7b5cb4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-e32ca6c elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e32ca6c" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e684731" data-id="e684731" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ce19782 elementor-widget elementor-widget-image elementor-motion-effects-parent animated zoomIn elementor-motion-effects-perspective" data-id="ce19782" data-element_type="widget" data-settings="{&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.5,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:0,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.5,&quot;sizes&quot;:[]},&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--rotateX:1.63669deg; --rotateY:-5.81073deg; --translateX:-11.6215px; --translateY:-3.27338px; transform: rotateX(var(--rotateX))rotateY(var(--rotateY))translateX(var(--translateX))translateY(var(--translateY));">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/noman2-p8sz8zky0jhm150zuk4lswz3sxq0hjm4718z89xc44.png" title="noman2" alt="noman2">															</div>
+				</div>
+				<div class="elementor-element elementor-element-dfb115c animated-slow elementor-widget elementor-widget-text-editor" data-id="dfb115c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="font-size: 5rem; font-family: 'Hind Siliguri', sans-serif; line-height: .1;">নোমান ২</p>
+<p style="font-size: 2rem; font-family: 'Hind Siliguri', sans-serif;">WRITER : অন্তিক মাহমুদ</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3109bc6 elementor-widget elementor-widget-text-editor" data-id="3109bc6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 1.5; font-family: 'Hind Siliguri', sans-serif;"><span style="font-weight: 400;">গতবারের বিরাট লড়াইয়ের পর, নোমানকে এখন সবাই চেনে। মানুষ এখন যেমন তাকে চেনে, তেমনি তার ওপর আশাও রাখে অনেক বেশি। নোমান দোটানায় পড়ে যায় এই ভেবে যে, সে কি মানুষের আশাই খালি পূরন করবে, নাকি নিজের জীবনটাকেও সামলাবে। এমন সময় আবির্ভাব হয় এজেন্ট সাদীর।&nbsp; </span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-7e5d491 elementor-button-warning elementor-align-center elementor-widget elementor-widget-button" data-id="7e5d491" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" target="_blank" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">ORDER NOW</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1f55f55" data-id="1f55f55" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c11d771 elementor-widget elementor-widget-image elementor-motion-effects-parent animated zoomIn elementor-motion-effects-perspective" data-id="c11d771" data-element_type="widget" data-settings="{&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.5,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:0,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.5,&quot;sizes&quot;:[]},&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--rotateX:1.63669deg; --rotateY:-5.81073deg; --translateX:-11.6215px; --translateY:-3.27338px; transform: rotateX(var(--rotateX))rotateY(var(--rotateY))translateX(var(--translateX))translateY(var(--translateY));">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/perahin-transparent-bg-p8sz5bzjfqhgvqc56z8u3u6kmzqmjx3p0xx01jcgb8.png" title="perahin (transparent bg)" alt="প্যারাহীন">															</div>
+				</div>
+				<div class="elementor-element elementor-element-72686b5 animated-slow elementor-widget elementor-widget-text-editor" data-id="72686b5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="font-size: 5rem; font-family: 'Hind Siliguri', sans-serif; line-height: .1;">প্যারাহীন</p>
+<p style="font-size: 2rem; font-family: 'Hind Siliguri', sans-serif;">WRITER : অন্তিক মাহমুদ</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-50bc07c elementor-widget elementor-widget-text-editor" data-id="50bc07c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 1.5; font-family: 'Hind Siliguri', sans-serif;">ইউটিউবের অন্তিক এবং তার বন্ধুরা এসে গিয়েছে কমিক্স দুনিয়ায়। পিটুশ চায় অরিবের মুখে হাসি ফোটাতে, অন্তিক চায় দাবা শিখে দাবাড়ু কে হারাতে, আর জাপান তন্নি আছে আলাদা এক নিজের সমস্যায়। অন্তিক এনিমেটেড স্টুডিওর প্রথম সেলফ পাব্লিশ কমিক্স।</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-8495c14 elementor-button-info elementor-align-center elementor-widget elementor-widget-button" data-id="8495c14" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" target="_blank" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">ORDER NOW</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ec86edb" data-id="ec86edb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-82dcb51 elementor-widget elementor-widget-image elementor-motion-effects-parent animated zoomIn elementor-motion-effects-perspective" data-id="82dcb51" data-element_type="widget" data-settings="{&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2.5,&quot;sizes&quot;:[]},&quot;_animation_delay&quot;:400,&quot;motion_fx_mouseTrack_effect&quot;:&quot;yes&quot;,&quot;motion_fx_mouseTrack_direction&quot;:&quot;negative&quot;,&quot;motion_fx_mouseTrack_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.5,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container elementor-motion-effects-element" style="--rotateX:1.63669deg; --rotateY:-5.81073deg; --translateX:-11.6215px; --translateY:-3.27338px; transform: rotateX(var(--rotateX))rotateY(var(--rotateY))translateX(var(--translateX))translateY(var(--translateY));">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/noman1-1-p8szai3l0xk8qitt07oytj7u9a9avzmjqj352boi38.png" title="noman1" alt="noman1">															</div>
+				</div>
+				<div class="elementor-element elementor-element-1c362dd elementor-widget elementor-widget-text-editor" data-id="1c362dd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="font-size: 5rem; font-family: 'Hind Siliguri', sans-serif; line-height: .2;"><span style="font-family: 'Hind Siliguri';">নোমান</span> #১</p><p style="font-size: 2rem; font-family: 'Hind Siliguri', sans-serif;">WRITER :<span style="font-size: 14pt;"><span style="font-weight: 400; font-size: 12pt;">অন্তিক মাহমুদ || ঐশিক জাওয়াদ</span>&nbsp;</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-5782ceb elementor-widget elementor-widget-text-editor" data-id="5782ceb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p style="line-height: 1.5; font-family: 'Hind Siliguri', sans-serif;"><span style="font-weight: 400;">নোমান একজন বাংলাদেশি সুপারহিরো। থাকে ঢাকায়। ইচ্ছা একদিন সুপারহিরোগিরী করে ইউটিউবে অনেক ফেমাস হবে। কিন্তু তার কপালে কোনো ভালো ভিলেন জুটে না, হয় জোটে পকেটমার, আর নাহয় জুতা চোর।</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3aa334e elementor-button-warning elementor-align-center elementor-widget elementor-widget-button" data-id="3aa334e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" target="_blank" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">ORDER NOW</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8cf0e01 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="8cf0e01" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:300}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3cb1076" data-id="3cb1076" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6768a70 animated-slow elementor-widget elementor-widget-image" data-id="6768a70" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/tonni-pctt2s1m7jm4dniikymfx15v2r7bu4tywuclawjgyc.png" title="tonni" alt="tonni">															</div>
+				</div>
+				<div class="elementor-element elementor-element-eeb2975 elementor-widget elementor-widget-heading" data-id="eeb2975" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><p style="font-family: 'Hind Siliguri', sans-serif;">তন্নি</p></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7146470 elementor-widget elementor-widget-text-editor" data-id="7146470" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p><span style="font-size: 14pt; font-family: 'Hind Siliguri', sans-serif;">অন্তিক মাহমুদ</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-634f460 elementor-button-success elementor-align-center elementor-widget elementor-widget-button" data-id="634f460" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" target="_blank" rel="nofollow" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">Read Now</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a2ce794" data-id="a2ce794" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-67360f3 animated-slow elementor-widget elementor-widget-image" data-id="67360f3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/Aurib-pctt3bs872d55gpudp5lve6jjui1bs0bzk1sdpq7bo.png" title="Aurib" alt="Aurib">															</div>
+				</div>
+				<div class="elementor-element elementor-element-783f937 elementor-widget elementor-widget-heading" data-id="783f937" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><p style="font-family: 'Hind Siliguri', sans-serif;">অরিব</p></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b0f5135 elementor-widget elementor-widget-text-editor" data-id="b0f5135" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<span style="font-size: 14pt; font-family: 'Hind Siliguri', sans-serif;">অন্তিক মাহমুদ</span>						</div>
+				</div>
+				<div class="elementor-element elementor-element-07d871d elementor-button-success elementor-align-center elementor-widget elementor-widget-button" data-id="07d871d" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" target="_blank" rel="nofollow" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">Read Now</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-de64216" data-id="de64216" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-afcd495 animated-slow elementor-widget elementor-widget-image" data-id="afcd495" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="https://shopantik.com/wp-content/uploads/elementor/thumbs/adib-pctt3spbm30ayg19mwgw49wu8s6n6bvi1vsj0p147o.png" title="adib" alt="adib">															</div>
+				</div>
+				<div class="elementor-element elementor-element-0387e4e elementor-widget elementor-widget-heading" data-id="0387e4e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><p style="font-family: 'Hind Siliguri', sans-serif;">আদিব</p></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e6bae69 elementor-widget elementor-widget-text-editor" data-id="e6bae69" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<p><span style="font-size: 14pt; font-family: 'Hind Siliguri', sans-serif;">অন্তিক মাহমুদ</span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-56890b7 elementor-button-success elementor-align-center elementor-widget elementor-widget-button" data-id="56890b7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://comics.shopantik.com/" target="_blank" rel="nofollow" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-open"></i>			</span>
+						<span class="elementor-button-text">Read Now</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6d18fb9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6d18fb9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f3b462" data-id="8f3b462" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c781d84 elementor-widget elementor-widget-heading" data-id="c781d84" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-medium"><a href="https://shopantik.com/privacy-policy/"><img draggable="false" role="img" class="emoji" alt="🔐" src="https://s.w.org/images/core/emoji/13.1.0/svg/1f510.svg"> Privacy Policy</a></p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f21bf62" data-id="f21bf62" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8e92945 elementor-widget elementor-widget-heading" data-id="8e92945" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-medium"><a href="https://shopantik.com/return-refund-policy/"><img draggable="false" role="img" class="emoji" alt="↩" src="https://s.w.org/images/core/emoji/13.1.0/svg/21a9.svg"> Return And Refund Policy</a></p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ec38e72" data-id="ec38e72" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bc9e63e elementor-widget elementor-widget-heading" data-id="bc9e63e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-medium"><a href="https://shopantik.com/terms-and-conditions/"><img draggable="false" role="img" class="emoji" alt="⚠️" src="https://s.w.org/images/core/emoji/13.1.0/svg/26a0.svg"> Terms And Conditions</a></p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bbd6b48" data-id="bbd6b48" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4c2852f elementor-widget elementor-widget-heading" data-id="4c2852f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-medium"><a href="https://shopantik.com/about-us/"><img draggable="false" role="img" class="emoji" alt="🤷" src="https://s.w.org/images/core/emoji/13.1.0/svg/1f937.svg"> About Us</a></p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2e1bc94 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e1bc94" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f822ba5" data-id="f822ba5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8bd420b elementor-widget elementor-widget-image" data-id="8bd420b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="2048" height="1063" src="https://shopantik.com/wp-content/uploads/2021/09/SSLCOMMERZ-Pay-With-logo-All-Size_Aug-21-01-2048x1063.png" class="attachment-2048x2048 size-2048x2048" alt="" loading="lazy">															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+		    <div id="tbay-cart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-body-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel="stylesheet" id="woof_tooltip-css-css" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/tooltip/css/tooltipster.bundle.min.css?ver=2.2.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="woof_tooltip-css-noir-css" href="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css?ver=2.2.4.2" type="text/css" media="all">
+<script id="jquery-validate-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/jquery.validate.js?ver=1.0"></script>
+<script id="urna-auth-script-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var urna_ajax_auth_object = {"ajaxurl":"https:\/\/shopantik.com\/wp-admin\/admin-ajax.php","redirecturl":"https:\/\/shopantik.com","loadingmessage":"Sending user info, please wait...","validate":{"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date (ISO).","number":"Please enter a valid number.","digits":"Please enter only digits.","creditcard":"Please enter a valid credit card number.","equalTo":"Please enter the same value again.","accept":"Please enter a value with a valid extension.","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}."}};
+/* ]]> */
+</script>
+<script id="urna-auth-script-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/ajax-auth-script.js?ver=1.0"></script>
+<script id="bootstrap-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/bootstrap.min.js?ver=3.3.7"></script>
+<script id="regenerator-runtime-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7"></script>
+<script id="wp-polyfill-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"></script>
+<script id="contact-form-7-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/shopantik.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script id="contact-form-7-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2"></script>
+<script id="js-cookie-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.5.6.0"></script>
+<script id="woocommerce-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script id="woocommerce-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.6.0"></script>
+<script id="wc-cart-fragments-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_2c699676cb5a6276faeb7e0bdf8b705d","fragment_name":"wc_fragments_2c699676cb5a6276faeb7e0bdf8b705d","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script id="wc-cart-fragments-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.6.0"></script>
+<script id="underscore-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/underscore.min.js?ver=1.13.1"></script>
+<script id="wp-util-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script id="wp-util-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/wp-util.min.js?ver=5.8.2"></script>
+<script id="wc-add-to-cart-variation-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script id="wc-add-to-cart-variation-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=5.6.0"></script>
+<script id="woo-variation-swatches-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var woo_variation_swatches_options = {"is_product_page":"","show_variation_label":"1","variation_label_separator":":","wvs_nonce":"326e647e1f"};
+/* ]]> */
+</script>
+<script id="woo-variation-swatches-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.1.19"></script>
+<script id="urna-script-js-extra" type="text/javascript">
+/* <![CDATA[ */
+var urna_settings = {"active_theme":"furniture","ajaxurl":"https:\/\/shopantik.com\/wp-admin\/admin-ajax.php","search_nonce":"e6dc68e55f","category_open":"","lazyload":"1","quantity_minus":"<i class=\"linear-icon-minus\"><\/i>","quantity_plus":"<i class=\"linear-icon-plus\"><\/i>","quantity_mode":"","cancel":"cancel","show_all_text":"View all","search":"Search","posts":"{\"error\":\"\",\"m\":\"\",\"p\":\"11\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"11\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}","max_page":"0","mobile":"","current_page":"1","popup_cart_icon":"<i class=\"linear-icon-cross\"><\/i>","popup_cart_noti":"was added to shopping cart.","cart_position":"no-popup","ajax_update_quantity":"1","full_width":"","display_mode":"grid","loader":"https:\/\/shopantik.com\/wp-content\/themes\/urna\/images\/ajax-loader.gif","enable_ajax_add_to_cart":"1","elements_ready":{"slick":["brands","products","posts-grid","our-team","product-category","product-tabs","testimonials","product-categories-tabs","categories-tabs-with-banner","list-categories-product","custom-image-list-categories","custom-image-list-tags","product-flash-sales","product-list-tags","product-recently-viewed","product-count-down","top-notification"],"countdowntimer":["product-count-down","product-flash-sales"],"layzyloadimage":["product-flash-sales","product-count-down","brands","products","posts-grid","our-team","product-category","product-tabs","testimonials","product-categories-tabs","categories-tabs-with-banner","list-categories-product","custom-image-list-categories","product-list-tags","product-count-down","custom-image-list-tags","product-recently-viewed","product-flash-sales"],"treeview":["nav-menu"]}};
+/* ]]> */
+</script>
+<script id="urna-script-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/functions.min.js?ver=1.0"></script>
+<script id="urna-script-js-after" type="text/javascript">
+document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+    }
+
+window.addEventListener('contextmenu', function (e) { 
+    alert("Right click is disabled.")
+  e.preventDefault(); 
+}, false);
+
+document.addEventListener("keyup", function (e) {
+    var keyCode = e.keyCode ? e.keyCode : e.which;
+            if (keyCode == 44) {
+                stopPrntScr();
+                alert("Jail Khatar Shokh Hoise?")
+            }
+        });
+
+function stopPrntScr() {
+
+            var inpFld = document.createElement("input");
+            inpFld.setAttribute("value", ".");
+            inpFld.setAttribute("width", "0");
+            inpFld.style.height = "0px";
+            inpFld.style.width = "0px";
+            inpFld.style.border = "0px";
+            document.body.appendChild(inpFld);
+            inpFld.select();
+            document.execCommand("copy");
+            inpFld.remove(inpFld);
+        }
+function AccessClipboardData() {
+            try {
+                window.clipboardData.setData('text', "Access   Restricted");
+            } catch (err) {
+            }
+        }
+setInterval("AccessClipboardData()", 300);
+</script>
+<script id="urna-woocommerce-script-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/woocommerce.min.js?ver=1.0"></script>
+<script id="urna-skip-link-fix-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/skip-link-fix.min.js?ver=1.0"></script>
+<script id="wpb_composer_front_js-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.5.0"></script>
+<script id="jquery-autocomplete-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/jquery.autocomplete.min.js?ver=1.0.0"></script>
+<script id="urna-skins-script-js" type="text/javascript" src="https://shopantik.com/wp-content/themes/urna/js/skins/furniture.min.js?ver=1.0"></script>
+<script id="wp-embed-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/wp-embed.min.js?ver=5.8.2"></script>
+<script id="woof_tooltip-js-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/tooltip/js/tooltipster.bundle.min.js?ver=2.2.4.2"></script>
+<script id="woof_front-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/front.js?ver=2.2.4.2"></script>
+<script id="woof_radio_html_items-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/radio.js?ver=2.2.4.2"></script>
+<script id="woof_checkbox_html_items-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/checkbox.js?ver=2.2.4.2"></script>
+<script id="woof_select_html_items-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/select.js?ver=2.2.4.2"></script>
+<script id="woof_mselect_html_items-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/html_types/mselect.js?ver=2.2.4.2"></script>
+<script id="chosen-drop-down-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.jquery.min.js?ver=2.2.4.2"></script>
+<script id="elementor-webpack-runtime-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.4"></script>
+<script id="elementor-frontend-modules-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.4"></script>
+<script id="elementor-sticky-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.0.10"></script>
+<script id="elementor-pro-frontend-js-before" type="text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/shopantik.com\/wp-admin\/admin-ajax.php","nonce":"bb882adae2","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"menu_cart":{"cart_page_url":"https:\/\/shopantik.com\/cart\/","checkout_page_url":"https:\/\/shopantik.com\/checkout\/"},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/shopantik.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script id="elementor-pro-frontend-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.0.10"></script>
+<script id="elementor-waypoints-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"></script>
+<script id="jquery-ui-core-js" type="text/javascript" src="https://shopantik.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1"></script>
+<script id="swiper-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6"></script>
+<script id="share-link-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.4"></script>
+<script id="elementor-dialog-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1"></script>
+<script id="elementor-frontend-js-before" type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"landing-pages":true},"urls":{"assets":"https:\/\/shopantik.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":11,"title":"Antik%27s%20Shop%20%E2%80%93%20Antik%27s%20Animated%20Shop","excerpt":"","featuredImage":false}};
+</script>
+<script id="elementor-frontend-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.4"></script>
+<script id="preloaded-modules-js" type="text/javascript" src="https://shopantik.com/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.4"></script>
+
+                <style type="text/css">
+        
+        
+
+
+        
+
+
+
+                        .woof_edit_view{
+                    display: none;
+                }
+        
+        </style>
+        
+
+        	
+
+<span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span><div id="woof_html_buffer" class="woof_info_popup" style="display: none;"></div></body></html>
